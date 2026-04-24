@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, viewport-fit=cover">
+    <title>AI Kids Learning - English Lesson 1: Alphabets</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="glass-container">
+        <!-- Futuristic Header - Animation Removed -->
+        <header class="futuristic-header">
+            <div class="hologram-effect">
+                <span class="ai-emoji">🤖</span>
+                <h1>AI LEARNING<span class="glow-text"> ACADEMY</span></h1>
+                <span class="ai-emoji">⚡</span>
+            </div>
+            <div class="lesson-badge">
+                <p>📖 ENGLISH - LESSON 1 | ALPHABETS 🔤</p>
+                <p class="urdu-header">🎓 حروف تہجی - کلاس 1 سے 5 تک 🎓</p>
+            </div>
+        </header>
+
+        <!-- Neon Progress Bar -->
+        <div class="neon-progress">
+            <div class="progress-bar-fill" id="progressBarFill"></div>
+            <div class="progress-glow"></div>
+        </div>
+
+        <!-- Main Touch-Friendly Modules -->
+        <main id="mainContent">
+            <!-- MODULE 1: Alphabet Image -->
+            <div id="module1" class="module active" data-module="1">
+                <div class="module-card glass-card">
+                    <div class="module-title">
+                        <span class="module-num">01</span>
+                        <h2>📸 ALPHABET CHART</h2>
+                        <button class="voice-btn" data-voice="module1">🔊</button>
+                    </div>
+                    <div class="module-content">
+                        <div class="image-container">
+                            <img src="images/Alphabets.png" alt="Alphabets" id="alphabetImage" onerror="this.src='https://via.placeholder.com/800x400/1a1a2e/0ee?text=ALPHABETS+A+TO+Z'">
+                            <div class="image-glow"></div>
+                        </div>
+                        <div class="bilingual-text">
+                            <p class="urdu-text">یہ ہے A سے Z تک کے حروف تہجی</p>
+                            <p class="english-text">This is the alphabet chart from A to Z</p>
+                        </div>
+                    </div>
+                    <div class="nav-buttons">
+                        <button class="next-btn" data-next="module2">➡️ NEXT MODULE 02</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 2: A to E -->
+            <div id="module2" class="module" data-module="2">
+                <div class="module-card glass-card">
+                    <div class="module-title">
+                        <span class="module-num">02</span>
+                        <h2>🎨 A - E | حروف ا سے ای</h2>
+                        <button class="voice-btn" data-voice="module2">🔊</button>
+                    </div>
+                    <div class="module-content">
+                        <div class="letters-futuristic">
+                            <div class="letter-tile" data-letter="A" data-urdu="اے - سیب" data-eng="A for Apple">A <span class="letter-urdu">(اے - سیب)</span></div>
+                            <div class="letter-tile" data-letter="B" data-urdu="بی - گیند" data-eng="B for Ball">B <span class="letter-urdu">(بی - گیند)</span></div>
+                            <div class="letter-tile" data-letter="C" data-urdu="سی - بلی" data-eng="C for Cat">C <span class="letter-urdu">(سی - بلی)</span></div>
+                            <div class="letter-tile" data-letter="D" data-urdu="ڈی - کتا" data-eng="D for Dog">D <span class="letter-urdu">(ڈی - کتا)</span></div>
+                            <div class="letter-tile" data-letter="E" data-urdu="ای - ہاتھی" data-eng="E for Elephant">E <span class="letter-urdu">(ای - ہاتھی)</span></div>
+                        </div>
+                        <div class="bilingual-text">
+                            <p class="urdu-text">ان حروف کو ٹچ کریں اور سنیں</p>
+                            <p class="english-text">Tap any letter to learn and listen</p>
+                        </div>
+                    </div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module1">⬅️ PREV</button>
+                        <button class="next-btn" data-next="module3">NEXT ➡️</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 3: F to J Floating -->
+            <div id="module3" class="module" data-module="3">
+                <div class="module-card glass-card">
+                    <div class="module-title">
+                        <span class="module-num">03</span>
+                        <h2>🎭 F - J | حروف ایف سے جے</h2>
+                        <button class="voice-btn" data-voice="module3">🔊</button>
+                    </div>
+                    <div class="module-content">
+                        <div class="floating-letters">
+                            <div class="float-tile" data-letter="F" data-urdu="ایف - مچھلی" data-eng="F for Fish">F 🐟</div>
+                            <div class="float-tile" data-letter="G" data-urdu="جی - انگور" data-eng="G for Grapes">G 🍇</div>
+                            <div class="float-tile" data-letter="H" data-urdu="ایچ - گھر" data-eng="H for House">H 🏠</div>
+                            <div class="float-tile" data-letter="I" data-urdu="آئی - آئس کریم" data-eng="I for Ice Cream">I 🍦</div>
+                            <div class="float-tile" data-letter="J" data-urdu="جے - جوس" data-eng="J for Juice">J 🥤</div>
+                        </div>
+                        <div class="bilingual-text">
+                            <p class="urdu-text">یہ حروف حرکت کر رہے ہیں - انہیں ٹچ کریں</p>
+                            <p class="english-text">Floating letters - tap to learn</p>
+                        </div>
+                    </div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module2">⬅️ PREV</button>
+                        <button class="next-btn" data-next="module4">NEXT ➡️</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 4: K to O Emoji -->
+            <div id="module4" class="module" data-module="4">
+                <div class="module-card glass-card">
+                    <div class="module-title">
+                        <span class="module-num">04</span>
+                        <h2>😊 K - O | حروف کے سے او</h2>
+                        <button class="voice-btn" data-voice="module4">🔊</button>
+                    </div>
+                    <div class="module-content">
+                        <div class="emoji-grid">
+                            <div class="emoji-tile" data-letter="K" data-urdu="کے - بادشاہ" data-eng="K for King">K 👑</div>
+                            <div class="emoji-tile" data-letter="L" data-urdu="ایل - شیر" data-eng="L for Lion">L 🦁</div>
+                            <div class="emoji-tile" data-letter="M" data-urdu="ایم - بندر" data-eng="M for Monkey">M 🐒</div>
+                            <div class="emoji-tile" data-letter="N" data-urdu="این - گھونسلا" data-eng="N for Nest">N 🪹</div>
+                            <div class="emoji-tile" data-letter="O" data-urdu="او - الو" data-eng="O for Owl">O 🦉</div>
+                        </div>
+                    </div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module3">⬅️ PREV</button>
+                        <button class="next-btn" data-next="module5">NEXT ➡️</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 5: Simple Match Game - Fixed -->
+            <div id="module5" class="module" data-module="5">
+                <div class="module-card glass-card">
+                    <div class="module-title">
+                        <span class="module-num">05</span>
+                        <h2>🧩 MATCH THE LETTER | حرف ملائیں</h2>
+                        <button class="voice-btn" data-voice="module5">🔊</button>
+                    </div>
+                    <div class="module-content">
+                        <div class="puzzle-hint">
+                            <p class="urdu-hint">👉 کھیلنے کا طریقہ: پہلے بائیں طرف والے حرف کو ٹچ کریں، پھر دائیں طرف والی تصویر کو ٹچ کریں 👈</p>
+                            <p class="english-hint">👉 How to play: First tap the letter on the left, then tap the picture on the right 👈</p>
+                        </div>
+                        <div class="match-simple">
+                            <div class="match-letters">
+                                <div class="match-letter" data-letter="P" data-match="penguin">🔤 P</div>
+                                <div class="match-letter" data-letter="Q" data-match="queen">🔤 Q</div>
+                                <div class="match-letter" data-letter="R" data-match="rabbit">🔤 R</div>
+                            </div>
+                            <div class="match-pictures">
+                                <div class="match-pic" data-pic="penguin">🐧 Penguin</div>
+                                <div class="match-pic" data-pic="queen">👸 Queen</div>
+                                <div class="match-pic" data-pic="rabbit">🐇 Rabbit</div>
+                            </div>
+                        </div>
+                        <div id="matchMessage" class="match-message"></div>
+                    </div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module4">⬅️ PREV</button>
+                        <button class="next-btn" data-next="module6">NEXT ➡️</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 6: U to Z Click Voice -->
+            <div id="module6" class="module" data-module="6">
+                <div class="module-card glass-card">
+                    <div class="module-title">
+                        <span class="module-num">06</span>
+                        <h2>🎯 U - Z | حروف یو سے زیڈ</h2>
+                        <button class="voice-btn" data-voice="module6">🔊</button>
+                    </div>
+                    <div class="module-content">
+                        <div class="voice-letters">
+                            <button class="voice-letter" data-letter="U" data-urdu="یو - چھتری" data-eng="U for Umbrella">U ☔</button>
+                            <button class="voice-letter" data-letter="V" data-urdu="وی - وائلن" data-eng="V for Violin">V 🎻</button>
+                            <button class="voice-letter" data-letter="W" data-urdu="ڈبلیو - وہیل" data-eng="W for Whale">W 🐋</button>
+                            <button class="voice-letter" data-letter="X" data-urdu="ایکس - ایکس رے" data-eng="X for X-ray">X 🦴</button>
+                            <button class="voice-letter" data-letter="Y" data-urdu="وائی - یویو" data-eng="Y for Yoyo">Y 🪀</button>
+                            <button class="voice-letter" data-letter="Z" data-urdu="زیڈ - زیبرا" data-eng="Z for Zebra">Z 🦓</button>
+                        </div>
+                    </div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module5">⬅️ PREV</button>
+                        <button class="next-btn" data-next="module7">NEXT ➡️</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 7: Vowels Special -->
+            <div id="module7" class="module" data-module="7">
+                <div class="module-card glass-card">
+                    <div class="module-title">
+                        <span class="module-num">07</span>
+                        <h2>⭐ VOWELS</h2>
+                        <button class="voice-btn" data-voice="module7">🔊</button>
+                    </div>
+                    <div class="module-content">
+                        <div class="vowels-neon">
+                            <div class="vowel-neon" data-vowel="A">A 🎵</div>
+                            <div class="vowel-neon" data-vowel="E">E 🎵</div>
+                            <div class="vowel-neon" data-vowel="I">I 🎵</div>
+                            <div class="vowel-neon" data-vowel="O">O 🎵</div>
+                            <div class="vowel-neon" data-vowel="U">U 🎵</div>
+                        </div>
+                        <div class="bilingual-text">
+                            <p class="english-text">These are vowels - every word needs a vowel</p>
+                        </div>
+                    </div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module6">⬅️ PREV</button>
+                        <button class="next-btn" data-next="module8">NEXT ➡️</button>
+                    </div>
+                </div>
+            </div>
+
+                <!-- MODULE 8: Capital & Small - Random Button Changes Boxes -->
+            <div id="module8" class="module" data-module="8">
+                <div class="module-card glass-card">
+                    <div class="module-title">
+                        <span class="module-num">08</span>
+                        <h2>🔠 CAPITAL & SMALL | بڑے اور چھوٹے حروف</h2>
+                        <button class="voice-btn" data-voice="module8">🔊</button>
+                    </div>
+                    <div class="module-content">
+                        <!-- Dynamic boxes - will change on random click -->
+                        <div class="case-new" id="caseNewContainer">
+                            <div class="capital-box" data-letter="A" data-type="capital">A <span class="capital-label">Capital A</span></div>
+                            <div class="small-box" data-letter="a" data-type="small">a <span class="small-label">small a</span></div>
+                            <div class="capital-box" data-letter="B" data-type="capital">B <span class="capital-label">Capital B</span></div>
+                            <div class="small-box" data-letter="b" data-type="small">b <span class="small-label">small b</span></div>
+                            <div class="capital-box" data-letter="C" data-type="capital">C <span class="capital-label">Capital C</span></div>
+                            <div class="small-box" data-letter="c" data-type="small">c <span class="small-label">small c</span></div>
+                        </div>
+                        
+                        <!-- Random Button -->
+                        <div class="random-section">
+                            <button id="randomLetterBtn" class="random-btn">🎲 RANDOM LETTER | کوئی بھی حرف 🎲</button>
+                        </div>
+                        
+                        <div class="bilingual-text">
+                            <p class="urdu-text">بڑے حروف (Capital) اور چھوٹے حروف (Small) - انہیں ٹچ کریں</p>
+                            <p class="english-text">Capital letters and small letters - tap to listen</p>
+                        </div>
+                    </div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module7">⬅️ PREV</button>
+                        <button class="next-btn" data-next="module9">NEXT ➡️</button>
+                    </div>
+                </div>
+            </div>
+            <!-- MODULE 9: Find Letter Game - Fixed -->
+            <div id="module9" class="module" data-module="9">
+                <div class="module-card glass-card">
+                    <div class="module-title">
+                        <span class="module-num">09</span>
+                        <h2>🎮 FIND THE LETTER | حرف تلاش کریں</h2>
+                        <button class="voice-btn" data-voice="module9">🔊</button>
+                    </div>
+                    <div class="module-content">
+                        <div class="game-neon">
+                            <p class="game-question-en" id="gameQuestionEn">Find letter "K"</p>
+                            <p class="game-question-ur" id="gameQuestionUr">K حرف ڈھونڈو</p>
+                            <div class="game-options" id="gameOptions"></div>
+                            <div id="gameMsg" class="game-msg"></div>
+                        </div>
+                    </div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module8">⬅️ PREV</button>
+                        <button class="next-btn" data-next="module10">NEXT ➡️</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 10: Quiz - Fixed Voice -->
+            <div id="module10" class="module" data-module="10">
+                <div class="module-card glass-card">
+                    <div class="module-title">
+                        <span class="module-num">10</span>
+                        <h2>🏆 FINAL QUIZ | آخری سوالات</h2>
+                        <button class="voice-btn" data-voice="module10">🔊</button>
+                    </div>
+                    <div class="module-content">
+                        <div id="quizContainer" class="quiz-neon"></div>
+                        <button id="submitQuiz" class="submit-neon">✅ SUBMIT QUIZ</button>
+                        <div id="quizResult" class="quiz-result"></div>
+                    </div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module9">⬅️ PREV</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Touch Navigation Dots -->
+        <div class="nav-dots" id="navDots"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
