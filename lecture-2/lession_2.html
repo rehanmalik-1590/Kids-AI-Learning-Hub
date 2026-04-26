@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Lesson 2 - Two & Three Letter Words (20 Words)</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📖 LESSON 2</h1>
+            <p>Two & Three Letter Words | 20 Words | دو اور تین حرفی الفاظ</p>
+            <button class="home-btn" onclick="goHome()">🏠 Home</button>
+        </header>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <main id="mainContent">
+            <!-- MODULE 1: Word List (20 Words) -->
+            <div id="module1" class="module active">
+                <div class="card">
+                    <h2>📚 Module 1: Learn 20 Words</h2>
+                    <div class="words-grid" id="wordsGrid"></div>
+                    <div class="nav-buttons">
+                        <button class="next-btn" data-next="module2">Next ➡️ Puzzle 1</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 2: Match Word with Picture (20 Words) -->
+            <div id="module2" class="module">
+                <div class="card">
+                    <h2>🧩 Puzzle 1: Match Word with Picture</h2>
+                    <p class="puzzle-hint">👉 Word ko sahi picture se match karo 👈</p>
+                    <div class="match-game" id="matchGame"></div>
+                    <div id="matchMessage" class="message"></div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module1">⬅️ Back</button>
+                        <button class="next-btn" data-next="module3">Next ➡️ Puzzle 2</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 3: Jumbled Letters (20 Words) -->
+            <div id="module3" class="module">
+                <div class="card">
+                    <h2>🧩 Puzzle 2: Jumbled Letters</h2>
+                    <p class="puzzle-hint">👉 Letters ko sahi order mein lagao 👈</p>
+                    <div class="jumble-game">
+                        <div class="jumble-question" id="jumbleQuestion"></div>
+                        <div class="jumble-options" id="jumbleOptions"></div>
+                    </div>
+                    <div id="jumbleMessage" class="message"></div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module2">⬅️ Back</button>
+                        <button class="next-btn" data-next="module4">Next ➡️ Puzzle 3</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 4: Fill in the Blanks (20 Words) -->
+            <div id="module4" class="module">
+                <div class="card">
+                    <h2>🧩 Puzzle 3: Fill in the Blanks</h2>
+                    <p class="puzzle-hint">👉 Missing letter fill karo 👈</p>
+                    <div id="fillGame" class="fill-game"></div>
+                    <div id="fillMessage" class="message"></div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module3">⬅️ Back</button>
+                        <button class="next-btn" data-next="module5">Next ➡️ Puzzle 4</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 5: Drag & Drop (20 Words) -->
+            <div id="module5" class="module">
+                <div class="card">
+                    <h2>🧩 Puzzle 4: Drag & Drop</h2>
+                    <p class="puzzle-hint">👉 Word ko sahi box mein drop karo 👈</p>
+                    <div class="drag-game" id="dragGame"></div>
+                    <div id="dragMessage" class="message"></div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module4">⬅️ Back</button>
+                        <button class="next-btn" data-next="module6">Next ➡️ Quiz</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 6: Final Quiz (20 Questions) -->
+            <div id="module6" class="module">
+                <div class="card">
+                    <h2>🏆 Final Quiz</h2>
+                    <p class="puzzle-hint">👉 20 questions - sahi jawaab do 👈</p>
+                    <div id="quizContainer" class="quiz-container"></div>
+                    <button id="submitQuiz" class="submit-btn">✅ Submit</button>
+                    <div id="quizResult" class="quiz-result"></div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module5">⬅️ Back</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="module-dots" id="moduleDots"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        function goHome() {
+            window.location.href = '../index.html';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,451 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    font-family: 'Comic Neue', 'Segoe UI Emoji', cursive;
+    padding: 15px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: cyan;
+    font-size: 28px;
+}
+
+header p {
+    color: #ffd966;
+    margin-top: 5px;
+}
+
+.home-btn {
+    margin-top: 10px;
+    background: rgba(255,255,255,0.2);
+    border: none;
+    padding: 8px 20px;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+.progress-container {
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    height: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, cyan, magenta);
+    transition: width 0.5s;
+}
+
+.module {
+    display: none;
+}
+
+.module.active {
+    display: block;
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateX(20px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+.card {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(15px);
+    border-radius: 30px;
+    padding: 20px;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+h2 {
+    color: cyan;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.puzzle-hint {
+    text-align: center;
+    color: #ffd966;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+/* Words Grid */
+.words-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.word-card {
+    background: rgba(0,255,255,0.15);
+    border: 1px solid cyan;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: cyan;
+    cursor: pointer;
+}
+
+.word-card .urdu {
+    display: block;
+    font-size: 14px;
+    color: #ffd966;
+}
+
+/* Match Game */
+.match-game {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.words-col, .pictures-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.match-word, .match-pic {
+    background: rgba(255,255,255,0.1);
+    border: 2px solid cyan;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.match-word.selected, .match-pic.selected {
+    background: cyan;
+    color: black;
+}
+
+.match-word:active, .match-pic:active {
+    transform: scale(0.97);
+}
+
+.match-word.matched, .match-pic.matched {
+    background: #4CAF50;
+    border-color: #4CAF50;
+    color: white;
+    cursor: default;
+    opacity: 0.7;
+}
+
+/* Jumble Game */
+.jumble-game {
+    text-align: center;
+}
+
+.jumble-question {
+    font-size: 48px;
+    letter-spacing: 10px;
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    color: cyan;
+}
+
+.jumble-options {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.jumble-option {
+    background: rgba(0,255,255,0.2);
+    border: none;
+    padding: 15px 25px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.jumble-option:active {
+    transform: scale(0.95);
+    background: cyan;
+}
+
+/* Fill in Blanks */
+.fill-game {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.fill-question {
+    background: rgba(0,0,0,0.5);
+    padding: 15px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.fill-question p {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.fill-options {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.fill-option {
+    background: rgba(0,255,255,0.2);
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.fill-option:active {
+    transform: scale(0.95);
+    background: cyan;
+}
+
+/* Drag & Drop Game */
+.drag-game {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.drag-words, .drop-zones {
+    flex: 1;
+}
+
+.drag-word {
+    background: rgba(0,255,255,0.2);
+    padding: 15px;
+    margin-bottom: 12px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 1px solid cyan;
+}
+
+.drag-word:active {
+    opacity: 0.5;
+}
+
+.drop-zone {
+    background: rgba(255,255,255,0.1);
+    border: 2px dashed cyan;
+    padding: 15px;
+    margin-bottom: 12px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 15px;
+    min-height: 60px;
+}
+
+.drop-zone.filled {
+    background: rgba(76,175,80,0.3);
+    border: 2px solid #4CAF50;
+}
+
+/* Quiz */
+.quiz-container {
+    margin-bottom: 20px;
+}
+
+.quiz-question {
+    background: rgba(0,0,0,0.5);
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.quiz-question p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.quiz-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.quiz-option {
+    background: rgba(255,255,255,0.1);
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.quiz-option span {
+    color: white;
+}
+
+.quiz-option input {
+    margin-right: 8px;
+    cursor: pointer;
+    accent-color: cyan;
+}
+
+/* Buttons */
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    gap: 10px;
+}
+
+.prev-btn, .next-btn, .submit-btn {
+    background: linear-gradient(135deg, cyan, magenta);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.prev-btn:active, .next-btn:active {
+    transform: scale(0.95);
+}
+
+.message {
+    text-align: center;
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+.quiz-result {
+    text-align: center;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 15px;
+    font-size: 18px;
+}
+
+.module-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 40px;
+    height: 8px;
+    background: rgba(255,255,255,0.3);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: cyan;
+    width: 55px;
+}
+
+
+/* Missing Classes for Match Game - Add to your existing style.css */
+
+/* Match Game Containers */
+.match-words-col, .match-pictures-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.match-word, .match-pic {
+    background: rgba(255,255,255,0.1);
+    border: 2px solid cyan;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.match-word.selected, .match-pic.selected {
+    background: cyan;
+    color: black;
+}
+
+.match-word.matched, .match-pic.matched {
+    background: #4CAF50;
+    border-color: #4CAF50;
+    color: white;
+    cursor: default;
+    opacity: 0.7;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 600px) {
+    .match-words-col, .match-pictures-col {
+        gap: 8px;
+    }
+    
+    .match-word, .match-pic {
+        padding: 10px;
+        font-size: 18px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .match-game, .drag-game {
+        flex-direction: column;
+    }
+    
+    .jumble-question {
+        font-size: 32px;
+    }
+    
+    h2 {
+        font-size: 18px;
+    }
+}

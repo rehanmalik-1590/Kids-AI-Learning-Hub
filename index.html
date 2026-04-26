@@ -2,306 +2,519 @@
 <html lang="ur">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, viewport-fit=cover">
-    <title>AI Kids Learning - English Lesson 1: Alphabets</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Kids Learning Academy - All Lessons</title>
+    <style>
+        /* Index Page Style - Pure Glassmorphism + Gradient Background */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    font-family: 'Comic Neue', 'Segoe UI Emoji', 'Orbitron', cursive;
+    padding: 15px;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Animated Gradient Background */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(125deg, 
+        rgba(255, 0, 150, 0.2), 
+        rgba(0, 255, 255, 0.2), 
+        rgba(255, 255, 0, 0.1));
+    z-index: -2;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 50%, rgba(0, 255, 255, 0.1), transparent 70%);
+    z-index: -1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* Pure Glass Header */
+.header {
+    text-align: center;
+    padding: 30px 20px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 50px;
+    margin-bottom: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+    font-size: 28px;
+    background: linear-gradient(45deg, #00ffff, #ff00ff, #ffff00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.header p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+}
+
+.urdu-title {
+    font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif;
+    color: #00ffff;
+    margin-top: 8px;
+    font-size: 16px;
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+}
+
+/* Lessons Grid - Mobile First */
+.lessons-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+/* Pure Glass Card - Mirror Effect */
+.lesson-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 25px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Mirror shine effect on card */
+.lesson-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+    border-radius: 30px;
+}
+
+.lesson-card:hover::before {
+    left: 100%;
+}
+
+.lesson-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.lesson-card:active {
+    transform: scale(0.98);
+}
+
+/* Locked Card */
+.lesson-card.locked {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.lesson-card.locked:active {
+    transform: none;
+}
+
+.lesson-card.locked::before {
+    display: none;
+}
+
+/* Icons */
+.lesson-icon {
+    font-size: 55px;
+    margin-bottom: 12px;
+    filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.5));
+}
+
+.lesson-number {
+    font-family: 'Orbitron', monospace;
+    font-size: 18px;
+    font-weight: bold;
+    color: #00ffff;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+}
+
+.lesson-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 6px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.lesson-title-urdu {
+    font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif;
+    font-size: 16px;
+    color: #ffd966;
+    margin-bottom: 12px;
+}
+
+.lesson-desc {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 13px;
+    margin-bottom: 18px;
+    line-height: 1.4;
+    padding: 0 10px;
+}
+
+.lock-icon {
+    font-size: 20px;
+    color: #ff8888;
+    margin-top: 8px;
+}
+
+/* Glass Play Button */
+.play-btn {
+    background: linear-gradient(135deg, rgba(0, 255, 255, 0.6), rgba(255, 0, 255, 0.6));
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px 22px;
+    border-radius: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.play-btn:active {
+    transform: scale(0.94);
+}
+
+/* Progress Section - Glass */
+.progress-section {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.progress-title {
+    text-align: center;
+    color: #00ffff;
+    font-size: 16px;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.progress-bar-container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    height: 16px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 10%;
+    height: 100%;
+    background: linear-gradient(90deg, #00ffff, #ff00ff);
+    border-radius: 20px;
+    transition: width 0.5s ease;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.progress-text {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 11px;
+}
+
+/* Tablet View */
+@media (min-width: 600px) {
+    body {
+        padding: 20px;
+    }
+    
+    .lessons-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    
+    .header h1 {
+        font-size: 32px;
+    }
+    
+    .lesson-title {
+        font-size: 22px;
+    }
+}
+
+/* Desktop View */
+@media (min-width: 900px) {
+    .lessons-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+    
+    .header h1 {
+        font-size: 38px;
+    }
+    
+    .lesson-card:hover {
+        transform: translateY(-8px);
+        border-color: rgba(0, 255, 255, 0.5);
+        box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3);
+        background: rgba(255, 255, 255, 0.08);
+    }
+    
+    .lesson-card.locked:hover {
+        transform: none;
+    }
+}
+
+/* Small Mobile Landscape */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    .lesson-card {
+        padding: 18px 15px;
+    }
+    
+    .lesson-icon {
+        font-size: 48px;
+    }
+    
+    .lesson-title {
+        font-size: 20px;
+    }
+    
+    .lesson-number {
+        font-size: 15px;
+    }
+    
+    .play-btn {
+        padding: 8px 18px;
+        font-size: 13px;
+    }
+}
+    </style>
 </head>
 <body>
-    <div class="glass-container">
-        <!-- Futuristic Header - Animation Removed -->
-        <header class="futuristic-header">
-            <div class="hologram-effect">
-                <span class="ai-emoji">🤖</span>
-                <h1>AI LEARNING<span class="glow-text"> ACADEMY</span></h1>
-                <span class="ai-emoji">⚡</span>
-            </div>
-            <div class="lesson-badge">
-                <p>📖 ENGLISH - LESSON 1 | ALPHABETS 🔤</p>
-                <p class="urdu-header">🎓 حروف تہجی - کلاس 1 سے 5 تک 🎓</p>
-            </div>
-        </header>
-
-        <!-- Neon Progress Bar -->
-        <div class="neon-progress">
-            <div class="progress-bar-fill" id="progressBarFill"></div>
-            <div class="progress-glow"></div>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🤖 KIDS LEARNING ACADEMY 📚</h1>
+            <p>Learn English & Math with Fun!</p>
+            <p class="urdu-title">🎓 انگلش اور ریاضی سیکھیں تفریحی طریقے سے 🎓</p>
         </div>
 
-        <!-- Main Touch-Friendly Modules -->
-        <main id="mainContent">
-            <!-- MODULE 1: Alphabet Image -->
-            <div id="module1" class="module active" data-module="1">
-                <div class="module-card glass-card">
-                    <div class="module-title">
-                        <span class="module-num">01</span>
-                        <h2>📸 ALPHABET CHART</h2>
-                        <button class="voice-btn" data-voice="module1">🔊</button>
-                    </div>
-                    <div class="module-content">
-                        <div class="image-container">
-                            <img src="images/Alphabets.png" alt="Alphabets" id="alphabetImage" onerror="this.src='https://via.placeholder.com/800x400/1a1a2e/0ee?text=ALPHABETS+A+TO+Z'">
-                            <div class="image-glow"></div>
-                        </div>
-                        <div class="bilingual-text">
-                            <p class="urdu-text">یہ ہے A سے Z تک کے حروف تہجی</p>
-                            <p class="english-text">This is the alphabet chart from A to Z</p>
-                        </div>
-                    </div>
-                    <div class="nav-buttons">
-                        <button class="next-btn" data-next="module2">➡️ NEXT MODULE 02</button>
-                    </div>
-                </div>
+        <!-- Lessons Grid -->
+        <div class="lessons-grid" id="lessonsGrid">
+            <!-- Lesson 1 Card -->
+            <div class="lesson-card" data-lesson="1" data-url="lecture-1/lession_1.html">
+                <div class="lesson-icon">🔤</div>
+                <div class="lesson-number">LESSON 01</div>
+                <div class="lesson-title">Alphabets</div>
+                <div class="lesson-title-urdu">حروف تہجی</div>
+                <div class="lesson-desc">A to Z alphabets with Urdu meanings, animations, games and quiz</div>
+                <button class="play-btn">▶ START LESSON</button>
             </div>
 
-            <!-- MODULE 2: A to E -->
-            <div id="module2" class="module" data-module="2">
-                <div class="module-card glass-card">
-                    <div class="module-title">
-                        <span class="module-num">02</span>
-                        <h2>🎨 A - E | حروف ا سے ای</h2>
-                        <button class="voice-btn" data-voice="module2">🔊</button>
-                    </div>
-                    <div class="module-content">
-                        <div class="letters-futuristic">
-                            <div class="letter-tile" data-letter="A" data-urdu="اے - سیب" data-eng="A for Apple">A <span class="letter-urdu">(اے - سیب)</span></div>
-                            <div class="letter-tile" data-letter="B" data-urdu="بی - گیند" data-eng="B for Ball">B <span class="letter-urdu">(بی - گیند)</span></div>
-                            <div class="letter-tile" data-letter="C" data-urdu="سی - بلی" data-eng="C for Cat">C <span class="letter-urdu">(سی - بلی)</span></div>
-                            <div class="letter-tile" data-letter="D" data-urdu="ڈی - کتا" data-eng="D for Dog">D <span class="letter-urdu">(ڈی - کتا)</span></div>
-                            <div class="letter-tile" data-letter="E" data-urdu="ای - ہاتھی" data-eng="E for Elephant">E <span class="letter-urdu">(ای - ہاتھی)</span></div>
-                        </div>
-                        <div class="bilingual-text">
-                            <p class="urdu-text">ان حروف کو ٹچ کریں اور سنیں</p>
-                            <p class="english-text">Tap any letter to learn and listen</p>
-                        </div>
-                    </div>
-                    <div class="nav-buttons">
-                        <button class="prev-btn" data-prev="module1">⬅️ PREV</button>
-                        <button class="next-btn" data-next="module3">NEXT ➡️</button>
-                    </div>
-                </div>
+            <!-- Lesson 2 Card -->
+            <div class="lesson-card" data-lesson="2" data-url="lecture-2/lession_2.html">
+                <div class="lesson-icon">🧩</div>
+                <div class="lesson-number">LESSON 02</div>
+                <div class="lesson-title">Two & Three Letter Words</div>
+                <div class="lesson-title-urdu">دو اور تین حرفی الفاظ</div>
+                <div class="lesson-desc">Puzzles: Match, Jumbled Letters, Fill Blanks, Drag & Drop</div>
+                <button class="play-btn">▶ START LESSON</button>
             </div>
 
-            <!-- MODULE 3: F to J Floating -->
-            <div id="module3" class="module" data-module="3">
-                <div class="module-card glass-card">
-                    <div class="module-title">
-                        <span class="module-num">03</span>
-                        <h2>🎭 F - J | حروف ایف سے جے</h2>
-                        <button class="voice-btn" data-voice="module3">🔊</button>
-                    </div>
-                    <div class="module-content">
-                        <div class="floating-letters">
-                            <div class="float-tile" data-letter="F" data-urdu="ایف - مچھلی" data-eng="F for Fish">F 🐟</div>
-                            <div class="float-tile" data-letter="G" data-urdu="جی - انگور" data-eng="G for Grapes">G 🍇</div>
-                            <div class="float-tile" data-letter="H" data-urdu="ایچ - گھر" data-eng="H for House">H 🏠</div>
-                            <div class="float-tile" data-letter="I" data-urdu="آئی - آئس کریم" data-eng="I for Ice Cream">I 🍦</div>
-                            <div class="float-tile" data-letter="J" data-urdu="جے - جوس" data-eng="J for Juice">J 🥤</div>
-                        </div>
-                        <div class="bilingual-text">
-                            <p class="urdu-text">یہ حروف حرکت کر رہے ہیں - انہیں ٹچ کریں</p>
-                            <p class="english-text">Floating letters - tap to learn</p>
-                        </div>
-                    </div>
-                    <div class="nav-buttons">
-                        <button class="prev-btn" data-prev="module2">⬅️ PREV</button>
-                        <button class="next-btn" data-next="module4">NEXT ➡️</button>
-                    </div>
-                </div>
+            <!-- Lesson 3 Card (Coming Soon - Locked) -->
+            <div class="lesson-card locked" data-lesson="3" data-url="#">
+                <div class="lesson-icon">🔒</div>
+                <div class="lesson-number">LESSON 03</div>
+                <div class="lesson-title">Basic Sentences</div>
+                <div class="lesson-title-urdu">بنیادی جملے</div>
+                <div class="lesson-desc">I am, You are, He is, She is with examples and quiz</div>
+                <div class="lock-icon">🔒 Coming Soon</div>
             </div>
 
-            <!-- MODULE 4: K to O Emoji -->
-            <div id="module4" class="module" data-module="4">
-                <div class="module-card glass-card">
-                    <div class="module-title">
-                        <span class="module-num">04</span>
-                        <h2>😊 K - O | حروف کے سے او</h2>
-                        <button class="voice-btn" data-voice="module4">🔊</button>
-                    </div>
-                    <div class="module-content">
-                        <div class="emoji-grid">
-                            <div class="emoji-tile" data-letter="K" data-urdu="کے - بادشاہ" data-eng="K for King">K 👑</div>
-                            <div class="emoji-tile" data-letter="L" data-urdu="ایل - شیر" data-eng="L for Lion">L 🦁</div>
-                            <div class="emoji-tile" data-letter="M" data-urdu="ایم - بندر" data-eng="M for Monkey">M 🐒</div>
-                            <div class="emoji-tile" data-letter="N" data-urdu="این - گھونسلا" data-eng="N for Nest">N 🪹</div>
-                            <div class="emoji-tile" data-letter="O" data-urdu="او - الو" data-eng="O for Owl">O 🦉</div>
-                        </div>
-                    </div>
-                    <div class="nav-buttons">
-                        <button class="prev-btn" data-prev="module3">⬅️ PREV</button>
-                        <button class="next-btn" data-next="module5">NEXT ➡️</button>
-                    </div>
-                </div>
+            <!-- Lesson 4 Card (Coming Soon - Locked) -->
+            <div class="lesson-card locked" data-lesson="4" data-url="#">
+                <div class="lesson-icon">🔒</div>
+                <div class="lesson-number">LESSON 04</div>
+                <div class="lesson-title">Math - Numbers</div>
+                <div class="lesson-title-urdu">ریاضی - اعداد</div>
+                <div class="lesson-desc">Counting 1 to 20, addition, subtraction with animations</div>
+                <div class="lock-icon">🔒 Coming Soon</div>
             </div>
 
-            <!-- MODULE 5: Simple Match Game - Fixed -->
-            <div id="module5" class="module" data-module="5">
-                <div class="module-card glass-card">
-                    <div class="module-title">
-                        <span class="module-num">05</span>
-                        <h2>🧩 MATCH THE LETTER | حرف ملائیں</h2>
-                        <button class="voice-btn" data-voice="module5">🔊</button>
-                    </div>
-                    <div class="module-content">
-                        <div class="puzzle-hint">
-                            <p class="urdu-hint">👉 کھیلنے کا طریقہ: پہلے بائیں طرف والے حرف کو ٹچ کریں، پھر دائیں طرف والی تصویر کو ٹچ کریں 👈</p>
-                            <p class="english-hint">👉 How to play: First tap the letter on the left, then tap the picture on the right 👈</p>
-                        </div>
-                        <div class="match-simple">
-                            <div class="match-letters">
-                                <div class="match-letter" data-letter="P" data-match="penguin">🔤 P</div>
-                                <div class="match-letter" data-letter="Q" data-match="queen">🔤 Q</div>
-                                <div class="match-letter" data-letter="R" data-match="rabbit">🔤 R</div>
-                            </div>
-                            <div class="match-pictures">
-                                <div class="match-pic" data-pic="penguin">🐧 Penguin</div>
-                                <div class="match-pic" data-pic="queen">👸 Queen</div>
-                                <div class="match-pic" data-pic="rabbit">🐇 Rabbit</div>
-                            </div>
-                        </div>
-                        <div id="matchMessage" class="match-message"></div>
-                    </div>
-                    <div class="nav-buttons">
-                        <button class="prev-btn" data-prev="module4">⬅️ PREV</button>
-                        <button class="next-btn" data-next="module6">NEXT ➡️</button>
-                    </div>
-                </div>
+            <!-- Lesson 5 Card (Coming Soon - Locked) -->
+            <div class="lesson-card locked" data-lesson="5" data-url="#">
+                <div class="lesson-icon">🔒</div>
+                <div class="lesson-number">LESSON 05</div>
+                <div class="lesson-title">Math - Shapes & Colors</div>
+                <div class="lesson-title-urdu">ریاضی - اشکال اور رنگ</div>
+                <div class="lesson-desc">Circle, Square, Triangle, Red, Blue, Yellow and more</div>
+                <div class="lock-icon">🔒 Coming Soon</div>
             </div>
+        </div>
 
-            <!-- MODULE 6: U to Z Click Voice -->
-            <div id="module6" class="module" data-module="6">
-                <div class="module-card glass-card">
-                    <div class="module-title">
-                        <span class="module-num">06</span>
-                        <h2>🎯 U - Z | حروف یو سے زیڈ</h2>
-                        <button class="voice-btn" data-voice="module6">🔊</button>
-                    </div>
-                    <div class="module-content">
-                        <div class="voice-letters">
-                            <button class="voice-letter" data-letter="U" data-urdu="یو - چھتری" data-eng="U for Umbrella">U ☔</button>
-                            <button class="voice-letter" data-letter="V" data-urdu="وی - وائلن" data-eng="V for Violin">V 🎻</button>
-                            <button class="voice-letter" data-letter="W" data-urdu="ڈبلیو - وہیل" data-eng="W for Whale">W 🐋</button>
-                            <button class="voice-letter" data-letter="X" data-urdu="ایکس - ایکس رے" data-eng="X for X-ray">X 🦴</button>
-                            <button class="voice-letter" data-letter="Y" data-urdu="وائی - یویو" data-eng="Y for Yoyo">Y 🪀</button>
-                            <button class="voice-letter" data-letter="Z" data-urdu="زیڈ - زیبرا" data-eng="Z for Zebra">Z 🦓</button>
-                        </div>
-                    </div>
-                    <div class="nav-buttons">
-                        <button class="prev-btn" data-prev="module5">⬅️ PREV</button>
-                        <button class="next-btn" data-next="module7">NEXT ➡️</button>
-                    </div>
-                </div>
+        <!-- Progress Section -->
+        <div class="progress-section">
+            <div class="progress-title">📊 Your Learning Progress</div>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progressBar"></div>
             </div>
+            <div class="progress-text" id="progressText">Lesson 1 Completed! 20% Complete</div>
+        </div>
 
-            <!-- MODULE 7: Vowels Special -->
-            <div id="module7" class="module" data-module="7">
-                <div class="module-card glass-card">
-                    <div class="module-title">
-                        <span class="module-num">07</span>
-                        <h2>⭐ VOWELS</h2>
-                        <button class="voice-btn" data-voice="module7">🔊</button>
-                    </div>
-                    <div class="module-content">
-                        <div class="vowels-neon">
-                            <div class="vowel-neon" data-vowel="A">A 🎵</div>
-                            <div class="vowel-neon" data-vowel="E">E 🎵</div>
-                            <div class="vowel-neon" data-vowel="I">I 🎵</div>
-                            <div class="vowel-neon" data-vowel="O">O 🎵</div>
-                            <div class="vowel-neon" data-vowel="U">U 🎵</div>
-                        </div>
-                        <div class="bilingual-text">
-                            <p class="english-text">These are vowels - every word needs a vowel</p>
-                        </div>
-                    </div>
-                    <div class="nav-buttons">
-                        <button class="prev-btn" data-prev="module6">⬅️ PREV</button>
-                        <button class="next-btn" data-next="module8">NEXT ➡️</button>
-                    </div>
-                </div>
-            </div>
-
-                <!-- MODULE 8: Capital & Small - Random Button Changes Boxes -->
-            <div id="module8" class="module" data-module="8">
-                <div class="module-card glass-card">
-                    <div class="module-title">
-                        <span class="module-num">08</span>
-                        <h2>🔠 CAPITAL & SMALL | بڑے اور چھوٹے حروف</h2>
-                        <button class="voice-btn" data-voice="module8">🔊</button>
-                    </div>
-                    <div class="module-content">
-                        <!-- Dynamic boxes - will change on random click -->
-                        <div class="case-new" id="caseNewContainer">
-                            <div class="capital-box" data-letter="A" data-type="capital">A <span class="capital-label">Capital A</span></div>
-                            <div class="small-box" data-letter="a" data-type="small">a <span class="small-label">small a</span></div>
-                            <div class="capital-box" data-letter="B" data-type="capital">B <span class="capital-label">Capital B</span></div>
-                            <div class="small-box" data-letter="b" data-type="small">b <span class="small-label">small b</span></div>
-                            <div class="capital-box" data-letter="C" data-type="capital">C <span class="capital-label">Capital C</span></div>
-                            <div class="small-box" data-letter="c" data-type="small">c <span class="small-label">small c</span></div>
-                        </div>
-                        
-                        <!-- Random Button -->
-                        <div class="random-section">
-                            <button id="randomLetterBtn" class="random-btn">🎲 RANDOM LETTER | کوئی بھی حرف 🎲</button>
-                        </div>
-                        
-                        <div class="bilingual-text">
-                            <p class="urdu-text">بڑے حروف (Capital) اور چھوٹے حروف (Small) - انہیں ٹچ کریں</p>
-                            <p class="english-text">Capital letters and small letters - tap to listen</p>
-                        </div>
-                    </div>
-                    <div class="nav-buttons">
-                        <button class="prev-btn" data-prev="module7">⬅️ PREV</button>
-                        <button class="next-btn" data-next="module9">NEXT ➡️</button>
-                    </div>
-                </div>
-            </div>
-            <!-- MODULE 9: Find Letter Game - Fixed -->
-            <div id="module9" class="module" data-module="9">
-                <div class="module-card glass-card">
-                    <div class="module-title">
-                        <span class="module-num">09</span>
-                        <h2>🎮 FIND THE LETTER | حرف تلاش کریں</h2>
-                        <button class="voice-btn" data-voice="module9">🔊</button>
-                    </div>
-                    <div class="module-content">
-                        <div class="game-neon">
-                            <p class="game-question-en" id="gameQuestionEn">Find letter "K"</p>
-                            <p class="game-question-ur" id="gameQuestionUr">K حرف ڈھونڈو</p>
-                            <div class="game-options" id="gameOptions"></div>
-                            <div id="gameMsg" class="game-msg"></div>
-                        </div>
-                    </div>
-                    <div class="nav-buttons">
-                        <button class="prev-btn" data-prev="module8">⬅️ PREV</button>
-                        <button class="next-btn" data-next="module10">NEXT ➡️</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- MODULE 10: Quiz - Fixed Voice -->
-            <div id="module10" class="module" data-module="10">
-                <div class="module-card glass-card">
-                    <div class="module-title">
-                        <span class="module-num">10</span>
-                        <h2>🏆 FINAL QUIZ | آخری سوالات</h2>
-                        <button class="voice-btn" data-voice="module10">🔊</button>
-                    </div>
-                    <div class="module-content">
-                        <div id="quizContainer" class="quiz-neon"></div>
-                        <button id="submitQuiz" class="submit-neon">✅ SUBMIT QUIZ</button>
-                        <div id="quizResult" class="quiz-result"></div>
-                    </div>
-                    <div class="nav-buttons">
-                        <button class="prev-btn" data-prev="module9">⬅️ PREV</button>
-                    </div>
-                </div>
-            </div>
-        </main>
-
-        <!-- Touch Navigation Dots -->
-        <div class="nav-dots" id="navDots"></div>
+        <!-- Footer -->
+        <div class="footer">
+            <p>✨ Tap on any lesson card to start learning ✨ | 👶 For Class 1-5 Kids 👧</p>
+        </div>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        // Load progress from localStorage
+        function loadProgress() {
+            const completedLessons = JSON.parse(localStorage.getItem('completedLessons') || '[]');
+            const totalLessons = 5;
+            const progressPercent = (completedLessons.length / totalLessons) * 100;
+            
+            const progressBar = document.getElementById('progressBar');
+            const progressText = document.getElementById('progressText');
+            
+            if (progressBar) {
+                progressBar.style.width = progressPercent + '%';
+            }
+            
+            if (progressText) {
+                if (completedLessons.includes(1)) {
+                    progressText.innerHTML = `✅ Lesson 1 Completed! ${Math.round(progressPercent)}% Complete. Keep going! 🎉`;
+                } else {
+                    progressText.innerHTML = `📚 ${completedLessons.length} of ${totalLessons} lessons completed. Start Lesson 1! 🚀`;
+                }
+            }
+            
+            // Update lesson 1 card if completed
+            if (completedLessons.includes(1)) {
+                const lesson1Card = document.querySelector('.lesson-card[data-lesson="1"]');
+                if (lesson1Card) {
+                    const playBtn = lesson1Card.querySelector('.play-btn');
+                    if (playBtn) {
+                        playBtn.innerHTML = '🔄 REVIEW LESSON';
+                    }
+                    const icon = lesson1Card.querySelector('.lesson-icon');
+                    if (icon) {
+                        icon.innerHTML = '✅🔤';
+                    }
+                }
+            }
+        }
+        
+        // Mark lesson as completed
+        function markLessonComplete(lessonId) {
+            let completed = JSON.parse(localStorage.getItem('completedLessons') || '[]');
+            if (!completed.includes(lessonId)) {
+                completed.push(lessonId);
+                localStorage.setItem('completedLessons', JSON.stringify(completed));
+            }
+            loadProgress();
+        }
+        
+        // Check if coming back from lesson (check URL params)
+        function checkLessonCompletion() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const completed = urlParams.get('completed');
+            if (completed === '1') {
+                markLessonComplete(1);
+                // Remove param from URL
+                window.history.replaceState({}, document.title, window.location.pathname);
+            }
+        }
+        
+        // Open lesson
+        function openLesson(lessonId, url) {
+            if (url === '#') {
+                alert('📚 This lesson is coming soon! Stay tuned. 🎉\n\nیہ سبق جلد آئے گا!');
+                return;
+            }
+            
+            // Navigate to lesson page
+            window.location.href = url;
+        }
+        
+        // Add click event to all lesson cards
+        document.querySelectorAll('.lesson-card').forEach(card => {
+            card.addEventListener('click', (e) => {
+                // Don't trigger if clicking on button (button has its own handler)
+                if (e.target.classList.contains('play-btn')) {
+                    e.stopPropagation();
+                }
+                const lessonId = card.getAttribute('data-lesson');
+                const url = card.getAttribute('data-url');
+                openLesson(lessonId, url);
+            });
+            
+            // Also add click to play button
+            const playBtn = card.querySelector('.play-btn');
+            if (playBtn) {
+                playBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const lessonId = card.getAttribute('data-lesson');
+                    const url = card.getAttribute('data-url');
+                    openLesson(lessonId, url);
+                });
+            }
+        });
+        
+        // Initialize
+        loadProgress();
+        checkLessonCompletion();
+    </script>
 </body>
 </html>
