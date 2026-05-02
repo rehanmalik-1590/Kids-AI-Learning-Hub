@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Lesson 3 - English Sentences (20 Options Each)</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📖 LESSON 3</h1>
+            <p>English Sentences | I am, You are, He/She/It is, We/They are (20 Options Each)</p>
+            <button class="home-btn" onclick="goHome()">🏠 Home</button>
+        </header>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <main id="mainContent">
+            <!-- MODULE 1: Word List (20 Words) -->
+            <div id="module1" class="module active">
+                <div class="card">
+                    <h2>📚 Module 1: Learn 20 Words</h2>
+                    <div class="words-grid" id="wordsGrid"></div>
+                    <div class="nav-buttons">
+                        <button class="next-btn" data-next="module2">Next ➡️ Puzzle 1</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 2: Match Sentence with Picture (20 Options) -->
+            <div id="module2" class="module">
+                <div class="card">
+                    <h2>🧩 Puzzle 1: Match Sentence with Picture (20)</h2>
+                    <p class="puzzle-hint">👉 Sentence ko sahi picture se match karo 👈</p>
+                    <div class="match-game">
+                        <div class="match-sentences-col" id="sentencesCol"></div>
+                        <div class="match-pictures-col" id="picturesCol"></div>
+                    </div>
+                    <div id="matchMessage" class="message"></div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module1">⬅️ Back</button>
+                        <button class="next-btn" data-next="module3">Next ➡️ Puzzle 2</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 3: Sentence Jumble (20 Options) -->
+            <div id="module3" class="module">
+                <div class="card">
+                    <h2>🧩 Puzzle 2: Sentence Jumble (20)</h2>
+                    <p class="puzzle-hint">👉 Words ko sahi order mein lagao 👈</p>
+                    <div class="jumble-game">
+                        <div class="jumble-question" id="jumbleQuestion"></div>
+                        <div class="jumble-options" id="jumbleOptions"></div>
+                    </div>
+                    <div id="jumbleMessage" class="message"></div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module2">⬅️ Back</button>
+                        <button class="next-btn" data-next="module4">Next ➡️ Puzzle 3</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 4: Fill in the Blanks (20 Options) -->
+            <div id="module4" class="module">
+                <div class="card">
+                    <h2>🧩 Puzzle 3: Fill in the Blanks (20)</h2>
+                    <p class="puzzle-hint">👉 am / is / are sahi jagah fill karo 👈</p>
+                    <div id="fillGame" class="fill-game"></div>
+                    <div id="fillMessage" class="message"></div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module3">⬅️ Back</button>
+                        <button class="next-btn" data-next="module5">Next ➡️ Puzzle 4</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 5: Choose Correct Pronoun (20 Options) -->
+            <div id="module5" class="module">
+                <div class="card">
+                    <h2>🧩 Puzzle 4: Choose Correct Pronoun (20)</h2>
+                    <p class="puzzle-hint">👉 Sahi pronoun select karo 👈</p>
+                    <div id="pronounGame" class="choice-game"></div>
+                    <div id="pronounMessage" class="message"></div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module4">⬅️ Back</button>
+                        <button class="next-btn" data-next="module6">Next ➡️ Puzzle 5</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 6: Choose Correct Verb (20 Options) -->
+            <div id="module6" class="module">
+                <div class="card">
+                    <h2>🧩 Puzzle 5: Choose Correct Verb (20)</h2>
+                    <p class="puzzle-hint">👉 Sahi verb (am/is/are) select karo 👈</p>
+                    <div id="verbGame" class="choice-game"></div>
+                    <div id="verbMessage" class="message"></div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module5">⬅️ Back</button>
+                        <button class="next-btn" data-next="module7">Next ➡️ Puzzle 6</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 7: Make Negative Sentences - COMPLEX (20 Options) -->
+            <div id="module7" class="module">
+                <div class="card">
+                    <h2>🧩 Puzzle 6: Make Negative Sentences - COMPLEX (20)</h2>
+                    <p class="puzzle-hint">👉 "not" aur helping verb ko sahi jagah drag karo 👈</p>
+                    <div class="complex-game" id="negativeGame"></div>
+                    <div id="negativeMessage" class="message"></div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module6">⬅️ Back</button>
+                        <button class="next-btn" data-next="module8">Next ➡️ Puzzle 7</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 8: Make Interrogative Sentences - COMPLEX (20 Options) -->
+            <div id="module8" class="module">
+                <div class="card">
+                    <h2>🧩 Puzzle 7: Make Interrogative Sentences - COMPLEX (20)</h2>
+                    <p class="puzzle-hint">👉 Helping verb ko sentence ke start mein drag karo 👈</p>
+                    <div class="complex-game" id="interrogativeGame"></div>
+                    <div id="interrogativeMessage" class="message"></div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module7">⬅️ Back</button>
+                        <button class="next-btn" data-next="module9">Next ➡️ Puzzle 8</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 9: True or False (20 Options) -->
+            <div id="module9" class="module">
+                <div class="card">
+                    <h2>🧩 Puzzle 8: True or False (20)</h2>
+                    <p class="puzzle-hint">👉 Sentence sahi hai ya galat? 👈</p>
+                    <div id="tfGame" class="tf-game"></div>
+                    <div id="tfMessage" class="message"></div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module8">⬅️ Back</button>
+                        <button class="next-btn" data-next="module10">Next ➡️ Quiz</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 10: Final Quiz (20 Questions) -->
+            <div id="module10" class="module">
+                <div class="card">
+                    <h2>🏆 Final Quiz</h2>
+                    <p class="puzzle-hint">👉 20 questions - sahi jawaab do 👈</p>
+                    <div id="quizContainer" class="quiz-container"></div>
+                    <button id="submitQuiz" class="submit-btn">✅ Submit</button>
+                    <div id="quizResult" class="quiz-result"></div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module9">⬅️ Back</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="module-dots" id="moduleDots"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
