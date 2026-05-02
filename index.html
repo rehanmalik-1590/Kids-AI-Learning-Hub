@@ -6,339 +6,336 @@
     <title>Kids Learning Academy - All Lessons</title>
     <style>
         /* Index Page Style - Pure Glassmorphism + Gradient Background */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    -webkit-tap-highlight-color: transparent;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
 
-body {
-    min-height: 100vh;
-    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-    font-family: 'Comic Neue', 'Segoe UI Emoji', 'Orbitron', cursive;
-    padding: 15px;
-    overflow-x: hidden;
-    position: relative;
-}
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            font-family: 'Comic Neue', 'Segoe UI Emoji', 'Orbitron', cursive;
+            padding: 15px;
+            overflow-x: hidden;
+            position: relative;
+        }
 
-/* Animated Gradient Background */
-body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(125deg, 
-        rgba(255, 0, 150, 0.2), 
-        rgba(0, 255, 255, 0.2), 
-        rgba(255, 255, 0, 0.1));
-    z-index: -2;
-}
+        /* Animated Gradient Background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(125deg, 
+                rgba(255, 0, 150, 0.2), 
+                rgba(0, 255, 255, 0.2), 
+                rgba(255, 255, 0, 0.1));
+            z-index: -2;
+        }
 
-body::after {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle at 50% 50%, rgba(0, 255, 255, 0.1), transparent 70%);
-    z-index: -1;
-}
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 50% 50%, rgba(0, 255, 255, 0.1), transparent 70%);
+            z-index: -1;
+        }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    position: relative;
-    z-index: 1;
-}
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
 
-/* Pure Glass Header */
-.header {
-    text-align: center;
-    padding: 30px 20px;
-    background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    border-radius: 50px;
-    margin-bottom: 30px;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-}
+        /* Pure Glass Header */
+        .header {
+            text-align: center;
+            padding: 30px 20px;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border-radius: 50px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        }
 
-.header h1 {
-    font-size: 28px;
-    background: linear-gradient(45deg, #00ffff, #ff00ff, #ffff00);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    margin-bottom: 8px;
-    letter-spacing: 1px;
-}
+        .header h1 {
+            font-size: 28px;
+            background: linear-gradient(45deg, #00ffff, #ff00ff, #ffff00);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
 
-.header p {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 14px;
-}
+        .header p {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 14px;
+        }
 
-.urdu-title {
-    font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif;
-    color: #00ffff;
-    margin-top: 8px;
-    font-size: 16px;
-    text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
-}
+        .urdu-title {
+            font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif;
+            color: #00ffff;
+            margin-top: 8px;
+            font-size: 16px;
+            text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+        }
 
-/* Lessons Grid - Mobile First */
-.lessons-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    margin-bottom: 30px;
-}
+        /* Lessons Grid - Mobile First */
+        .lessons-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
 
-/* Pure Glass Card - Mirror Effect */
-.lesson-card {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border-radius: 30px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 25px 20px;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-}
+        /* Pure Glass Card - Mirror Effect */
+        .lesson-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 25px 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
 
-/* Mirror shine effect on card */
-.lesson-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-    transition: left 0.5s ease;
-    border-radius: 30px;
-}
+        /* Mirror shine effect on card */
+        .lesson-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+            border-radius: 30px;
+        }
 
-.lesson-card:hover::before {
-    left: 100%;
-}
+        .lesson-card:hover::before {
+            left: 100%;
+        }
 
-.lesson-card {
-    position: relative;
-    overflow: hidden;
-}
+        .lesson-card:active {
+            transform: scale(0.98);
+        }
 
-.lesson-card:active {
-    transform: scale(0.98);
-}
+        /* Locked Card */
+        .lesson-card.locked {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
 
-/* Locked Card */
-.lesson-card.locked {
-    opacity: 0.5;
-    cursor: not-allowed;
-}
+        .lesson-card.locked:active {
+            transform: none;
+        }
 
-.lesson-card.locked:active {
-    transform: none;
-}
+        .lesson-card.locked::before {
+            display: none;
+        }
 
-.lesson-card.locked::before {
-    display: none;
-}
+        /* Icons */
+        .lesson-icon {
+            font-size: 55px;
+            margin-bottom: 12px;
+            filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.5));
+        }
 
-/* Icons */
-.lesson-icon {
-    font-size: 55px;
-    margin-bottom: 12px;
-    filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.5));
-}
+        .lesson-number {
+            font-family: 'Orbitron', monospace;
+            font-size: 18px;
+            font-weight: bold;
+            color: #00ffff;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+            text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+        }
 
-.lesson-number {
-    font-family: 'Orbitron', monospace;
-    font-size: 18px;
-    font-weight: bold;
-    color: #00ffff;
-    margin-bottom: 8px;
-    letter-spacing: 1px;
-    text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
-}
+        .lesson-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 6px;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
 
-.lesson-title {
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-    margin-bottom: 6px;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-}
+        .lesson-title-urdu {
+            font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif;
+            font-size: 16px;
+            color: #ffd966;
+            margin-bottom: 12px;
+        }
 
-.lesson-title-urdu {
-    font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif;
-    font-size: 16px;
-    color: #ffd966;
-    margin-bottom: 12px;
-}
+        .lesson-desc {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 13px;
+            margin-bottom: 18px;
+            line-height: 1.4;
+            padding: 0 10px;
+        }
 
-.lesson-desc {
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 13px;
-    margin-bottom: 18px;
-    line-height: 1.4;
-    padding: 0 10px;
-}
+        .lock-icon {
+            font-size: 20px;
+            color: #ff8888;
+            margin-top: 8px;
+        }
 
-.lock-icon {
-    font-size: 20px;
-    color: #ff8888;
-    margin-top: 8px;
-}
+        /* Glass Play Button */
+        .play-btn {
+            background: linear-gradient(135deg, rgba(0, 255, 255, 0.6), rgba(255, 0, 255, 0.6));
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 10px 22px;
+            border-radius: 40px;
+            font-size: 15px;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+            transition: all 0.2s;
+            backdrop-filter: blur(4px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
 
-/* Glass Play Button */
-.play-btn {
-    background: linear-gradient(135deg, rgba(0, 255, 255, 0.6), rgba(255, 0, 255, 0.6));
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 10px 22px;
-    border-radius: 40px;
-    font-size: 15px;
-    font-weight: bold;
-    color: white;
-    cursor: pointer;
-    transition: all 0.2s;
-    backdrop-filter: blur(4px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
+        .play-btn:active {
+            transform: scale(0.94);
+        }
 
-.play-btn:active {
-    transform: scale(0.94);
-}
+        /* Progress Section - Glass */
+        .progress-section {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border-radius: 30px;
+            padding: 20px;
+            margin-top: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
 
-/* Progress Section - Glass */
-.progress-section {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    border-radius: 30px;
-    padding: 20px;
-    margin-top: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-}
+        .progress-title {
+            text-align: center;
+            color: #00ffff;
+            font-size: 16px;
+            margin-bottom: 12px;
+            font-weight: bold;
+        }
 
-.progress-title {
-    text-align: center;
-    color: #00ffff;
-    font-size: 16px;
-    margin-bottom: 12px;
-    font-weight: bold;
-}
+        .progress-bar-container {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            height: 16px;
+            overflow: hidden;
+        }
 
-.progress-bar-container {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    height: 16px;
-    overflow: hidden;
-}
+        .progress-bar {
+            width: 0%;
+            height: 100%;
+            background: linear-gradient(90deg, #00ffff, #ff00ff);
+            border-radius: 20px;
+            transition: width 0.5s ease;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+        }
 
-.progress-bar {
-    width: 10%;
-    height: 100%;
-    background: linear-gradient(90deg, #00ffff, #ff00ff);
-    border-radius: 20px;
-    transition: width 0.5s ease;
-    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
-}
+        .progress-text {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.8);
+            margin-top: 10px;
+            font-size: 13px;
+        }
 
-.progress-text {
-    text-align: center;
-    color: rgba(255, 255, 255, 0.8);
-    margin-top: 10px;
-    font-size: 13px;
-}
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 11px;
+        }
 
-/* Footer */
-.footer {
-    text-align: center;
-    margin-top: 30px;
-    padding: 15px;
-    color: rgba(255, 255, 255, 0.4);
-    font-size: 11px;
-}
+        /* Tablet View */
+        @media (min-width: 600px) {
+            body {
+                padding: 20px;
+            }
+            
+            .lessons-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 25px;
+            }
+            
+            .header h1 {
+                font-size: 32px;
+            }
+            
+            .lesson-title {
+                font-size: 22px;
+            }
+        }
 
-/* Tablet View */
-@media (min-width: 600px) {
-    body {
-        padding: 20px;
-    }
-    
-    .lessons-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
-    }
-    
-    .header h1 {
-        font-size: 32px;
-    }
-    
-    .lesson-title {
-        font-size: 22px;
-    }
-}
+        /* Desktop View */
+        @media (min-width: 900px) {
+            .lessons-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 30px;
+            }
+            
+            .header h1 {
+                font-size: 38px;
+            }
+            
+            .lesson-card:hover {
+                transform: translateY(-8px);
+                border-color: rgba(0, 255, 255, 0.5);
+                box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3);
+                background: rgba(255, 255, 255, 0.08);
+            }
+            
+            .lesson-card.locked:hover {
+                transform: none;
+            }
+        }
 
-/* Desktop View */
-@media (min-width: 900px) {
-    .lessons-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
-    }
-    
-    .header h1 {
-        font-size: 38px;
-    }
-    
-    .lesson-card:hover {
-        transform: translateY(-8px);
-        border-color: rgba(0, 255, 255, 0.5);
-        box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3);
-        background: rgba(255, 255, 255, 0.08);
-    }
-    
-    .lesson-card.locked:hover {
-        transform: none;
-    }
-}
-
-/* Small Mobile Landscape */
-@media (max-width: 480px) {
-    body {
-        padding: 10px;
-    }
-    
-    .lesson-card {
-        padding: 18px 15px;
-    }
-    
-    .lesson-icon {
-        font-size: 48px;
-    }
-    
-    .lesson-title {
-        font-size: 20px;
-    }
-    
-    .lesson-number {
-        font-size: 15px;
-    }
-    
-    .play-btn {
-        padding: 8px 18px;
-        font-size: 13px;
-    }
-}
+        /* Small Mobile Landscape */
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            
+            .lesson-card {
+                padding: 18px 15px;
+            }
+            
+            .lesson-icon {
+                font-size: 48px;
+            }
+            
+            .lesson-title {
+                font-size: 20px;
+            }
+            
+            .lesson-number {
+                font-size: 15px;
+            }
+            
+            .play-btn {
+                padding: 8px 18px;
+                font-size: 13px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -368,10 +365,9 @@ body::after {
                 <div class="lesson-number">LESSON 02</div>
                 <div class="lesson-title">Two & Three Letter Words</div>
                 <div class="lesson-title-urdu">دو اور تین حرفی الفاظ</div>
-                <div class="lesson-desc">Puzzles: Match, Jumbled Letters, Fill Blanks, Drag & Drop</div>
+                <div class="lesson-desc">Puzzles: Match, Jumbled Letters, Fill Blanks, Drag & Drop (20 Words)</div>
                 <button class="play-btn">▶ START LESSON</button>
             </div>
-
 
             <!-- Lesson 3 Card -->
             <div class="lesson-card" data-lesson="3" data-url="lecture-3/lesson_3.html">
@@ -379,27 +375,77 @@ body::after {
                 <div class="lesson-number">LESSON 03</div>
                 <div class="lesson-title">English Sentences</div>
                 <div class="lesson-title-urdu">انگریزی جملے - I am, You are, He/She/It is</div>
-                <div class="lesson-desc">10 modules: Word list, Match picture, Jumble, Fill blanks, Pronoun, Verb, Negative, Interrogative, True/False, Quiz</div>
+                <div class="lesson-desc">10 modules: Word list, Match picture, Jumble, Fill blanks, Pronoun, Verb, Negative, Interrogative, True/False, Quiz (20 each)</div>
                 <button class="play-btn">▶ START LESSON</button>
             </div>
 
-            <!-- Lesson 4 Card (Coming Soon - Locked) -->
-            <div class="lesson-card locked" data-lesson="4" data-url="#">
-                <div class="lesson-icon">🔒</div>
+            <!-- Lesson 4 Card -->
+            <div class="lesson-card" data-lesson="4" data-url="lecture-4/lesson_4.html">
+                <div class="lesson-icon">📚</div>
                 <div class="lesson-number">LESSON 04</div>
-                <div class="lesson-title">Math - Numbers</div>
-                <div class="lesson-title-urdu">ریاضی - اعداد</div>
-                <div class="lesson-desc">Counting 1 to 20, addition, subtraction with animations</div>
-                <div class="lock-icon">🔒 Coming Soon</div>
+                <div class="lesson-title">Articles & Singular/Plural</div>
+                <div class="lesson-title-urdu">ارٹیکلز اور واحد/جمع</div>
+                <div class="lesson-desc">15 modules: A/An/The, Vowel/Consonant Sort, Plurals (s/es/ies/ves), Irregular Plurals, Error Detection, Quizzes & more (20 each)</div>
+                <button class="play-btn">▶ START LESSON</button>
             </div>
 
             <!-- Lesson 5 Card (Coming Soon - Locked) -->
             <div class="lesson-card locked" data-lesson="5" data-url="#">
                 <div class="lesson-icon">🔒</div>
                 <div class="lesson-number">LESSON 05</div>
-                <div class="lesson-title">Math - Shapes & Colors</div>
-                <div class="lesson-title-urdu">ریاضی - اشکال اور رنگ</div>
-                <div class="lesson-desc">Circle, Square, Triangle, Red, Blue, Yellow and more</div>
+                <div class="lesson-title">Basic Grammar - Part 2</div>
+                <div class="lesson-title-urdu">بنیادی گرامر - حصہ دوم</div>
+                <div class="lesson-desc">Prepositions, Conjunctions, and more coming soon!</div>
+                <div class="lock-icon">🔒 Coming Soon</div>
+            </div>
+
+            <!-- Lesson 6 Card (Coming Soon - Locked) -->
+            <div class="lesson-card locked" data-lesson="6" data-url="#">
+                <div class="lesson-icon">🔒</div>
+                <div class="lesson-number">LESSON 06</div>
+                <div class="lesson-title">Reading Comprehension</div>
+                <div class="lesson-title-urdu">پڑھائی اور سمجھ بوجھ</div>
+                <div class="lesson-desc">Short stories, questions, and vocabulary building</div>
+                <div class="lock-icon">🔒 Coming Soon</div>
+            </div>
+
+            <!-- Lesson 7 Card (Coming Soon - Locked) -->
+            <div class="lesson-card locked" data-lesson="7" data-url="#">
+                <div class="lesson-icon">🔒</div>
+                <div class="lesson-number">LESSON 07</div>
+                <div class="lesson-title">Vocabulary Building</div>
+                <div class="lesson-title-urdu">الفاظ کی افزائش</div>
+                <div class="lesson-desc">Synonyms, Antonyms, Homophones with puzzles</div>
+                <div class="lock-icon">🔒 Coming Soon</div>
+            </div>
+
+            <!-- Lesson 8 Card (Coming Soon - Locked) -->
+            <div class="lesson-card locked" data-lesson="8" data-url="#">
+                <div class="lesson-icon">🔒</div>
+                <div class="lesson-number">LESSON 08</div>
+                <div class="lesson-title">Tenses - Present</div>
+                <div class="lesson-title-urdu">زمانہ - حال</div>
+                <div class="lesson-desc">Simple Present, Present Continuous with puzzles</div>
+                <div class="lock-icon">🔒 Coming Soon</div>
+            </div>
+
+            <!-- Lesson 9 Card (Coming Soon - Locked) -->
+            <div class="lesson-card locked" data-lesson="9" data-url="#">
+                <div class="lesson-icon">🔒</div>
+                <div class="lesson-number">LESSON 09</div>
+                <div class="lesson-title">Tenses - Past & Future</div>
+                <div class="lesson-title-urdu">زمانہ - ماضی اور مستقبل</div>
+                <div class="lesson-desc">Simple Past, Simple Future with interactive games</div>
+                <div class="lock-icon">🔒 Coming Soon</div>
+            </div>
+
+            <!-- Lesson 10 Card (Coming Soon - Locked) -->
+            <div class="lesson-card locked" data-lesson="10" data-url="#">
+                <div class="lesson-icon">🔒</div>
+                <div class="lesson-number">LESSON 10</div>
+                <div class="lesson-title">Sentence Formation</div>
+                <div class="lesson-title-urdu">جملہ سازی</div>
+                <div class="lesson-desc">Subject, Predicate, Types of Sentences with puzzles</div>
                 <div class="lock-icon">🔒 Coming Soon</div>
             </div>
         </div>
@@ -410,7 +456,7 @@ body::after {
             <div class="progress-bar-container">
                 <div class="progress-bar" id="progressBar"></div>
             </div>
-            <div class="progress-text" id="progressText">Lesson 1 Completed! 20% Complete</div>
+            <div class="progress-text" id="progressText"></div>
         </div>
 
         <!-- Footer -->
@@ -420,10 +466,21 @@ body::after {
     </div>
 
     <script>
+        // Total lessons (4 completed, 6 locked for now)
+        const totalLessons = 10;
+        const completedLessonsMax = 4;
+
         // Load progress from localStorage
         function loadProgress() {
-            const completedLessons = JSON.parse(localStorage.getItem('completedLessons') || '[]');
-            const totalLessons = 5;
+            let completedLessons = JSON.parse(localStorage.getItem('completedLessons') || '[]');
+            
+            // For demo purposes, mark first 4 lessons as completed if not already
+            // This is just for demo - in production, user must complete each lesson
+            if (completedLessons.length === 0) {
+                completedLessons = [1, 2, 3, 4];
+                localStorage.setItem('completedLessons', JSON.stringify(completedLessons));
+            }
+            
             const progressPercent = (completedLessons.length / totalLessons) * 100;
             
             const progressBar = document.getElementById('progressBar');
@@ -434,27 +491,19 @@ body::after {
             }
             
             if (progressText) {
-                if (completedLessons.includes(1)) {
-                    progressText.innerHTML = `✅ Lesson 1 Completed! ${Math.round(progressPercent)}% Complete. Keep going! 🎉`;
-                } else {
-                    progressText.innerHTML = `📚 ${completedLessons.length} of ${totalLessons} lessons completed. Start Lesson 1! 🚀`;
-                }
+                progressText.innerHTML = `✅ ${completedLessons.length} of ${totalLessons} lessons completed! (${Math.round(progressPercent)}%) Keep going! 🎉`;
             }
             
-            // Update lesson 1 card if completed
-            if (completedLessons.includes(1)) {
-                const lesson1Card = document.querySelector('.lesson-card[data-lesson="1"]');
-                if (lesson1Card) {
-                    const playBtn = lesson1Card.querySelector('.play-btn');
-                    if (playBtn) {
+            // Update lesson cards if completed
+            completedLessons.forEach(lessonId => {
+                const card = document.querySelector(`.lesson-card[data-lesson="${lessonId}"]`);
+                if (card && !card.classList.contains('locked')) {
+                    const playBtn = card.querySelector('.play-btn');
+                    if (playBtn && playBtn.innerHTML !== '🔄 REVIEW LESSON') {
                         playBtn.innerHTML = '🔄 REVIEW LESSON';
                     }
-                    const icon = lesson1Card.querySelector('.lesson-icon');
-                    if (icon) {
-                        icon.innerHTML = '✅🔤';
-                    }
                 }
-            }
+            });
         }
         
         // Mark lesson as completed
@@ -467,13 +516,12 @@ body::after {
             loadProgress();
         }
         
-        // Check if coming back from lesson (check URL params)
+        // Check if coming back from lesson
         function checkLessonCompletion() {
             const urlParams = new URLSearchParams(window.location.search);
             const completed = urlParams.get('completed');
-            if (completed === '1') {
-                markLessonComplete(1);
-                // Remove param from URL
+            if (completed) {
+                markLessonComplete(parseInt(completed));
                 window.history.replaceState({}, document.title, window.location.pathname);
             }
         }
@@ -484,15 +532,12 @@ body::after {
                 alert('📚 This lesson is coming soon! Stay tuned. 🎉\n\nیہ سبق جلد آئے گا!');
                 return;
             }
-            
-            // Navigate to lesson page
             window.location.href = url;
         }
         
         // Add click event to all lesson cards
         document.querySelectorAll('.lesson-card').forEach(card => {
             card.addEventListener('click', (e) => {
-                // Don't trigger if clicking on button (button has its own handler)
                 if (e.target.classList.contains('play-btn')) {
                     e.stopPropagation();
                 }
@@ -501,7 +546,6 @@ body::after {
                 openLesson(lessonId, url);
             });
             
-            // Also add click to play button
             const playBtn = card.querySelector('.play-btn');
             if (playBtn) {
                 playBtn.addEventListener('click', (e) => {

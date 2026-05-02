@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Lesson 4 - Articles (A/An/The) & Singular/Plural Nouns</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📖 LESSON 4</h1>
+            <p>Articles (A, An, The) & Singular/Plural Nouns</p>
+            <button class="home-btn" onclick="goHome()">🏠 Home</button>
+        </header>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <main id="mainContent">
+            <!-- MODULE 1: Word List (40 words) -->
+            <div id="module1" class="module active">
+                <div class="card">
+                    <h2>📚 Module 1: Learn 40 Words</h2>
+                    <div class="words-grid" id="wordsGrid"></div>
+                    <div class="nav-buttons">
+                        <button class="next-btn" data-next="module2">Next ➡️ Puzzle 1</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 2: Article Match (A/An with word) -->
+            <div id="module2" class="module">
+                <div class="card">
+                    <h2>🧩 Puzzle 1: Match Article with Word (20)</h2>
+                    <p class="puzzle-hint">👉 Word ko sahi article (A/An) se match karo 👈</p>
+                    <div class="article-match" id="articleMatchGame"></div>
+                    <div id="articleMatchMessage" class="message"></div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module1">⬅️ Back</button>
+                        <button class="next-btn" data-next="module3">Next ➡️ Puzzle 2</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 3: Fill Correct Article -->
+            <div id="module3" class="module">
+                <div class="card">
+                    <h2>🧩 Puzzle 2: Fill Correct Article (20)</h2>
+                    <p class="puzzle-hint">👉 Blank mein A / An / The fill karo 👈</p>
+                    <div id="fillArticleGame" class="choice-game"></div>
+                    <div id="fillArticleMessage" class="message"></div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module2">⬅️ Back</button>
+                        <button class="next-btn" data-next="module4">Next ➡️ Puzzle 3</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 4: Vowel/Consonant Sort -->
+            <div id="module4" class="module">
+                <div class="card">
+                    <h2>🧩 Puzzle 3: Vowel vs Consonant Sort (20)</h2>
+                    <p class="puzzle-hint">👉 Word ke pehle letter ko vowel ya consonant mein sort karo 👈</p>
+                    <div class="sort-game" id="sortGame"></div>
+                    <div id="sortMessage" class="message"></div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module3">⬅️ Back</button>
+                        <button class="next-btn" data-next="module5">Next ➡️ Puzzle 4</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 5: Plural Formation (add s/es/ies/ves) -->
+            <div id="module5" class="module">
+                <div class="card">
+                    <h2>🧩 Puzzle 4: Plural Formation (20)</h2>
+                    <p class="puzzle-hint">👉 Singular noun ka plural banao 👈</p>
+                    <div id="pluralFormGame" class="choice-game"></div>
+                    <div id="pluralFormMessage" class="message"></div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module4">⬅️ Back</button>
+                        <button class="next-btn" data-next="module6">Next ➡️ Puzzle 5</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 6: Irregular Plural Memory -->
+            <div id="module6" class="module">
+                <div class="card">
+                    <h2>🧩 Puzzle 5: Irregular Plural Match (20)</h2>
+                    <p class="puzzle-hint">👉 Singular ko uske irregular plural se match karo 👈</p>
+                    <div class="match-game" id="irregularGame"></div>
+                    <div id="irregularMessage" class="message"></div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module5">⬅️ Back</button>
+                        <button class="next-btn" data-next="module7">Next ➡️ Puzzle 6</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 7: Singular to Plural Drag -->
+            <div id="module7" class="module">
+                <div class="card">
+                    <h2>🧩 Puzzle 6: Singular to Plural Drag (20)</h2>
+                    <p class="puzzle-hint">👉 Singular word ko sahi plural box mein drag karo 👈</p>
+                    <div class="complex-game" id="dragPluralGame"></div>
+                    <div id="dragPluralMessage" class="message"></div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module6">⬅️ Back</button>
+                        <button class="next-btn" data-next="module8">Next ➡️ Puzzle 7</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 8: Plural to Singular -->
+            <div id="module8" class="module">
+                <div class="card">
+                    <h2>🧩 Puzzle 7: Plural to Singular (20)</h2>
+                    <p class="puzzle-hint">👉 Plural noun ka singular banao 👈</p>
+                    <div id="singularFormGame" class="choice-game"></div>
+                    <div id="singularFormMessage" class="message"></div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module7">⬅️ Back</button>
+                        <button class="next-btn" data-next="module9">Next ➡️ Puzzle 8</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 9: Choose Correct Form (A/An/The + Singular/Plural) -->
+            <div id="module9" class="module">
+                <div class="card">
+                    <h2>🧩 Puzzle 8: Choose Correct Form (20)</h2>
+                    <p class="puzzle-hint">👉 Sahi option select karo 👈</p>
+                    <div id="correctFormGame" class="choice-game"></div>
+                    <div id="correctFormMessage" class="message"></div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module8">⬅️ Back</button>
+                        <button class="next-btn" data-next="module10">Next ➡️ Puzzle 9</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 10: Sentence Fix (Error Detection) -->
+            <div id="module10" class="module">
+                <div class="card">
+                    <h2>🧩 Puzzle 9: Fix the Sentence (20)</h2>
+                    <p class="puzzle-hint">👉 Ghalati dhundho aur sahi karo 👈</p>
+                    <div id="sentenceFixGame" class="choice-game"></div>
+                    <div id="sentenceFixMessage" class="message"></div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module9">⬅️ Back</button>
+                        <button class="next-btn" data-next="module11">Next ➡️ Puzzle 10</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 11: Odd One Out -->
+            <div id="module11" class="module">
+                <div class="card">
+                    <h2>🧩 Puzzle 10: Odd One Out (20)</h2>
+                    <p class="puzzle-hint">👉 Alag word select karo 👈</p>
+                    <div id="oddOneGame" class="choice-game"></div>
+                    <div id="oddOneMessage" class="message"></div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module10">⬅️ Back</button>
+                        <button class="next-btn" data-next="module12">Next ➡️ Quiz 1</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 12: Article Quiz (20 Questions) -->
+            <div id="module12" class="module">
+                <div class="card">
+                    <h2>🏆 Quiz 1: Articles (20 Questions)</h2>
+                    <p class="puzzle-hint">👉 A / An / The fill karo 👈</p>
+                    <div id="articleQuizContainer" class="quiz-container"></div>
+                    <button id="submitArticleQuiz" class="submit-btn">✅ Submit</button>
+                    <div id="articleQuizResult" class="quiz-result"></div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module11">⬅️ Back</button>
+                        <button class="next-btn" data-next="module13">Next ➡️ Quiz 2</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 13: Plural Quiz (20 Questions) -->
+            <div id="module13" class="module">
+                <div class="card">
+                    <h2>🏆 Quiz 2: Singular/Plural (20 Questions)</h2>
+                    <p class="puzzle-hint">👉 Sahi plural form select karo 👈</p>
+                    <div id="pluralQuizContainer" class="quiz-container"></div>
+                    <button id="submitPluralQuiz" class="submit-btn">✅ Submit</button>
+                    <div id="pluralQuizResult" class="quiz-result"></div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module12">⬅️ Back</button>
+                        <button class="next-btn" data-next="module14">Next ➡️ Puzzle 11</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 14: Mixed Error Detection -->
+            <div id="module14" class="module">
+                <div class="card">
+                    <h2>🧩 Puzzle 11: Error Detection (20)</h2>
+                    <p class="puzzle-hint">👉 Sentence mein error find karo 👈</p>
+                    <div id="errorGame" class="choice-game"></div>
+                    <div id="errorMessage" class="message"></div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module13">⬅️ Back</button>
+                        <button class="next-btn" data-next="module15">Next ➡️ Final Test</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 15: Final Test (Mixed) -->
+            <div id="module15" class="module">
+                <div class="card">
+                    <h2>🏆 Final Test (20 Questions)</h2>
+                    <p class="puzzle-hint">👉 Articles + Singular/Plural mixed 👈</p>
+                    <div id="finalQuizContainer" class="quiz-container"></div>
+                    <button id="submitFinalQuiz" class="submit-btn">✅ Submit</button>
+                    <div id="finalQuizResult" class="quiz-result"></div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module14">⬅️ Back</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="module-dots" id="moduleDots"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
