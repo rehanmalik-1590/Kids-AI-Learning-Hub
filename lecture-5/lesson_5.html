@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, viewport-fit=cover">
+    <title>Lesson 5 - 50 Prepositions & AI Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📖 LESSON 5</h1>
+            <p>Prepositions (50 words) | 8 Modules | AI Chatbot</p>
+            <button class="home-btn" onclick="goHome()">🏠 Home</button>
+        </header>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <main id="mainContent">
+            <!-- MODULE 1: Word List (50 Prepositions) -->
+            <div id="module1" class="module active">
+                <div class="card">
+                    <h2>📚 Module 1: Learn 50 Prepositions</h2>
+                    <div class="words-grid" id="wordsGrid"></div>
+                    <div class="nav-buttons">
+                        <button class="next-btn" data-next="module2">Next ➡️ Puzzle 1</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 2: Match Game -->
+            <div id="module2" class="module">
+                <div class="card">
+                    <h2>🧩 Puzzle 1: Match Preposition with Picture</h2>
+                    <p class="puzzle-hint">👉 Preposition ko sahi picture se match karo 👈</p>
+                    <div class="match-game" id="prepositionMatchGame"></div>
+                    <div id="prepositionMatchMessage" class="message"></div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module1">⬅️ Back</button>
+                        <button class="next-btn" data-next="module3">Next ➡️ Puzzle 2</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 3: Fill Preposition -->
+            <div id="module3" class="module">
+                <div class="card">
+                    <h2>🧩 Puzzle 2: Fill Correct Preposition</h2>
+                    <p class="puzzle-hint">👉 Blank mein sahi preposition fill karo 👈</p>
+                    <div id="fillPrepositionGame" class="choice-game"></div>
+                    <div id="fillPrepositionMessage" class="message"></div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module2">⬅️ Back</button>
+                        <button class="next-btn" data-next="module4">Next ➡️ Puzzle 3</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 4: Drag & Drop -->
+            <div id="module4" class="module">
+                <div class="card">
+                    <h2>🧩 Puzzle 3: Drag & Drop - Position Compare</h2>
+                    <p class="puzzle-hint">👉 Word ko sahi position box mein drag karo 👈</p>
+                    <div class="compare-game" id="dragCompareGame"></div>
+                    <div id="dragCompareMessage" class="message"></div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module3">⬅️ Back</button>
+                        <button class="next-btn" data-next="module5">Next ➡️ Puzzle 4</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 5: Tricky Confusion -->
+            <div id="module5" class="module">
+                <div class="card">
+                    <h2>🧩 Puzzle 4: Tricky Confusion - IN vs ON vs UNDER</h2>
+                    <p class="puzzle-hint">👉 In / On / Under mein se sahi select karo 👈</p>
+                    <div id="trickyGame" class="choice-game"></div>
+                    <div id="trickyMessage" class="message"></div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module4">⬅️ Back</button>
+                        <button class="next-btn" data-next="module6">Next ➡️ Quiz 1</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 6: Mixed Quiz -->
+            <div id="module6" class="module">
+                <div class="card">
+                    <h2>🏆 Quiz 1: Mixed Prepositions (50 Questions)</h2>
+                    <p class="puzzle-hint">👉 Sahi preposition select karo 👈</p>
+                    <div id="mixedQuizContainer" class="quiz-container"></div>
+                    <button id="submitMixedQuiz" class="submit-btn">✅ Submit</button>
+                    <div id="mixedQuizResult" class="quiz-result"></div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module5">⬅️ Back</button>
+                        <button class="next-btn" data-next="module7">Next ➡️ AI CHATBOT</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 7: AI Chatbot -->
+            <div id="module7" class="module">
+                <div class="card">
+                    <h2>🤖 AI Chatbot - Learn with Fun (50 Questions)</h2>
+                    <p class="puzzle-hint">👉 Main tumse baat karunga, tum answer do, main sikhaunga! 👈</p>
+                    <div id="chatbotContainer" class="chat-container">
+                        <div class="chat-messages" id="chatMessages">
+                            <div class="bot-message">🤖 Hi! I'm your AI Teacher. What's your name?</div>
+                        </div>
+                        <div class="chat-input-area">
+                            <input type="text" id="chatInput" class="chat-input" placeholder="Type your answer here...">
+                            <button id="sendBtn" class="chat-send">📤 Send</button>
+                        </div>
+                    </div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module6">⬅️ Back</button>
+                        <button class="next-btn" data-next="module8">Next ➡️ Final Test</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 8: Final Test -->
+            <div id="module8" class="module">
+                <div class="card">
+                    <h2>🏆 Final Test (50 Questions)</h2>
+                    <p class="puzzle-hint">👉 All prepositions mixed - final challenge! 👈</p>
+                    <div id="finalQuizContainer" class="quiz-container"></div>
+                    <button id="submitFinalQuiz" class="submit-btn">✅ Submit</button>
+                    <div id="finalQuizResult" class="quiz-result"></div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module7">⬅️ Back</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="module-dots" id="moduleDots"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
