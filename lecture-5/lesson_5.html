@@ -11,7 +11,7 @@
     <div class="container">
         <header>
             <h1>📖 LESSON 5</h1>
-            <p>Prepositions (50 words) | 8 Modules | AI Chatbot</p>
+            <p>Prepositions (50 words) | 8 Modules | AI Chatbot with Voice 🎤</p>
             <button class="home-btn" onclick="goHome()">🏠 Home</button>
         </header>
 
@@ -102,18 +102,44 @@
                 </div>
             </div>
 
-            <!-- MODULE 7: AI Chatbot -->
+            <!-- MODULE 7: AI Chatbot WITH MIC BUTTON -->
             <div id="module7" class="module">
                 <div class="card">
-                    <h2>🤖 AI Chatbot - Learn with Fun (50 Questions)</h2>
-                    <p class="puzzle-hint">👉 Main tumse baat karunga, tum answer do, main sikhaunga! 👈</p>
+                    <h2>🤖 AI Chatbot - Learn with Fun (50 Questions) 🎤</h2>
+                    <p class="puzzle-hint">👉 Type karo ya 🎤 MIC button click karo aur bolo! 👈</p>
                     <div id="chatbotContainer" class="chat-container">
+                        <div class="chat-header">
+                            <span class="ai-badge">🧠 AI TUTOR</span>
+                            <span class="score-badge" id="chatScore">Score: 0/0</span>
+                            <span class="streak-badge" id="streakBadge">🔥 0</span>
+                        </div>
                         <div class="chat-messages" id="chatMessages">
-                            <div class="bot-message">🤖 Hi! I'm your AI Teacher. What's your name?</div>
+                            <div class="bot-message">
+                                <span class="bot-icon">🤖</span>
+                                <div class="message-content">
+                                    <strong>✨ Welcome to AI Tutor with Voice! ✨</strong><br><br>
+                                    🎤 <strong>Click the ORANGE MIC button and speak your answer!</strong><br>
+                                    📚 50 Grammar Questions: Nouns, Verbs, Prepositions, Pronouns<br><br>
+                                    👋 <strong>What is your name? / Apna naam batao?</strong>
+                                </div>
+                            </div>
                         </div>
                         <div class="chat-input-area">
-                            <input type="text" id="chatInput" class="chat-input" placeholder="Type your answer here...">
+                            <button id="micBtn" class="mic-btn" title="Click and Speak">🎤</button>
+                            <input type="text" id="chatInput" class="chat-input" placeholder="Type your answer... or click 🎤 and speak">
                             <button id="sendBtn" class="chat-send">📤 Send</button>
+                        </div>
+                        <div class="voice-status" id="voiceStatus">🔴 Click 🎤, speak, then auto-send!</div>
+                    </div>
+                    <div class="grammar-panel">
+                        <div class="grammar-header">📖 GRAMMAR REFERENCE</div>
+                        <div class="grammar-content">
+                            <p>🔤 Noun: Person/Place/Thing</p>
+                            <p>⚡ Verb: Action/State</p>
+                            <p>📍 Preposition: Position</p>
+                            <p>👤 Subjective: I, You, He, She, We, They</p>
+                            <p>👥 Objective: Me, Him, Her, Us, Them</p>
+                            <p>🔢 Singular/Plural: cat/cats, child/children</p>
                         </div>
                     </div>
                     <div class="nav-buttons">
