@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Lesson 6 - Adventure Story with Audio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📖 LESSON 6: FOUR KINGS EPIC JOURNEY</h1>
+            <p>چار بادشاہوں کا مہاکہانی سفر | Complete Story with Urdu Audio</p>
+            <button class="home-btn" onclick="goHome()">🏠 Home</button>
+        </header>
+
+        <div class="audio-section">
+            <button id="playAudioBtn" class="audio-btn">🔊 پوری کہانی سنیں | Play Full Story</button>
+            <button id="stopAudioBtn" class="audio-btn stop">⏹️ روکیں | Stop</button>
+            <div id="audioStatus" class="audio-status">🎙️ Audio تیار ہے۔ "پوری کہانی سنیں" پر کلک کریں</div>
+        </div>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <div class="module-dots" id="moduleDots"></div>
+
+        <main id="mainContent">
+            <!-- MODULE 1: COMPLETE STORY -->
+            <div id="module1" class="module active">
+                <div class="card">
+                    <h2>📖 Module 1: The Complete Adventure Story</h2>
+                    <div class="story-container">
+                        <div class="story-urdu">
+                            <h3>🇵🇰 اردو کہانی - چار بادشاہوں کا مہاکہانی سفر</h3>
+                            
+                            <p><strong>🌄 باب 1: چار بادشاہوں کا تعارف</strong><br>
+                            بہت پرانے زمانے کی بات ہے۔ چار بڑی سلطنتیں تھیں۔ ان سلطنتوں کے بادشاہ چار بھائی تھے۔ پہلے بادشاہ کا نام <strong>عبدالمنان</strong> تھا۔ وہ بہت انصاف پسند، مہربان اور رعایا سے محبت کرنے والا تھا۔ دوسرے بادشاہ کا نام <strong>کیف</strong> تھا۔ وہ بے حد بہادر، سچا اور اپنے قول کا پکا تھا۔ تیسرے بادشاہ کا نام <strong>طلحہ</strong> تھا۔ وہ بہت حکیم، دانا اور فلسفیانہ ذہن رکھنے والا تھا۔ چوتھے بادشاہ کا نام <strong>شیان</strong> تھا۔ وہ سب سے چھوٹا لیکن سب سے زیادہ ذہین، تیز فہم اور محنتی تھا۔</p>
+                            
+                            <p><strong>🌙 خواب اور سفر کا آغاز</strong><br>
+                            ایک رات چاروں بادشاہوں کو ایک جیسا خواب آیا۔ ایک رہنما نے ان سے کہا: "اے بادشاہو! تمہیں چار خطرناک جنگلوں سے گزر کر علم کا وہ خزانہ حاصل کرنا ہے جو کسی کو نہیں ملا۔ ہر جنگل میں تمہیں ایک راہنما ملے گا جو تم میں سے ہر بادشاہ سے تین سوال پوچھے گا۔ سب صحیح جواب دو گے تو راستہ کھل جائے گا۔" صبح سویرے چاروں بھائی اپنے وفادار گھوڑوں پر سوار ہوئے اور اللہ کا نام لے کر سفر پر نکل پڑے۔</p>
+                            
+                            <p><strong>🌳 باب 2: پہلا جنگل - آزمائش اور حکمت کا جنگل (آیان کا چیلنج)</strong><br>
+                            پہلا جنگل بہت گھنا اور پراسرار تھا۔ درخت اتنے بلند تھے کہ سورج کی کرنیں زمین تک نہیں پہنچ پاتی تھیں۔ راستے بھول بھلیوں کی طرح پیچیدہ تھے۔ اچانک انہیں ایک نوجوان ملا جس کا نام <strong>آیان</strong> تھا۔ اس کی آنکھوں میں چمک اور چہرے پر نور تھا۔ آیاں نے کہا: "میں تم میں سے ہر ایک سے تین سوال کروں گا۔ سب نے درست جواب دینا ہو گا تبھی راستہ ملے گا۔"</p>
+                            
+                            <p><strong>آیان اور بادشاہ عبدالمنان:</strong> "تم کون ہو؟" → "میں انصاف پسند بادشاہ عبدالمنان ہوں۔" "سب سے بڑی خوبی کیا ہے؟" → "ایمانداری۔" "تم نے یہ خطرناک سفر کیوں کیا؟" → "اپنی قوم کے لیے علم حاصل کرنے۔"</p>
+                            
+                            <p><strong>آیان اور بادشاہ کیف:</strong> "سب سے طاقتور چیز کیا ہے؟" → "محبت، کیونکہ یہ دشمن کو بھی دوست بنا دیتی ہے۔" "تمہارا اصل دشمن کون ہے؟" → "ناانصافی اور جھوٹ۔" "تمہارا سب سے بڑا ہتھیار کیا ہے؟" → "انصاف کی تلوار اور سچائی کی ڈھال۔"</p>
+                            
+                            <p><strong>آیان اور بادشاہ طلحہ:</strong> "سب سے قیمتی شے کیا ہے؟" → "وقت، کیونکہ یہ کبھی واپس نہیں آتا۔" "غلطی کا بہترین علاج کیا ہے؟" → "معافی، کیونکہ یہ دل کو ہلکا کر دیتی ہے۔" "ایک اچھے بادشاہ کا پہلا فرض کیا ہے؟" → "اپنی رعایا کی حفاظت اور خوشحالی۔"</p>
+                            
+                            <p><strong>آیان اور بادشاہ شیان:</strong> "تم چاروں بھائی کیوں اکٹھے سفر کر رہے ہو؟" → "اتحاد میں برکت ہے، اکیلے کا کوئی نہیں۔" "سب سے بڑا راز کیا ہے؟" → "صبر، ہر مشکل حل ہو جاتی ہے صبر سے۔" "تم اس سفر سے کیا سیکھنا چاہتے ہو؟" → "حکمت اور عاجزی۔" آیاں نے تمام جواب سن کر کہا: "تم سچے اور بہادر ہو۔" اس نے راستہ دکھا دیا۔</p>
+                            
+                            <p><strong>🔥 باب 3: دوسرا جنگل - آگ اور پہاڑوں کا جنگل (پری فریال کا امتحان)</strong><br>
+                            دوسرا جنگل انتہائی گرم تھا۔ زمین سے آگ کے شعلے اٹھ رہے تھے اور پہاڑوں سے پگھلا ہوا لاوا بہہ رہا تھا۔ اچانک ایک حسین پری جس کا نام <strong>فریال</strong> تھا نمودار ہوئی۔ اس نے کہا: "ہر بادشاہ سے تین سوال، پھر راستہ۔"</p>
+                            
+                            <p><strong>فریال اور عبدالمنان:</strong> "آگ کیا چیز بجھا سکتی ہے؟" → "ہمت۔" "پہاڑ کیا توڑ سکتا ہے؟" → "مضبوط ارادے۔" "سب سے ٹھنڈی چیز کیا ہے؟" → "مومن کا پرسکون دل۔"</p>
+                            
+                            <p><strong>فریال اور کیف:</strong> "دریائے آگ کو کیسے پار کرو گے؟" → "اللہ پر بھروسہ کر کے۔" "روشنی کیا ہے؟" → "سچائی۔" "اندھیرے میں راستہ کیسے ملے گا؟" → "دعا اور استغفار سے۔"</p>
+                            
+                            <p><strong>فریال اور طلحہ:</strong> "سب سے بڑی دولت کیا ہے؟" → "صحت اور عافیت۔" "سب سے بھاری چیز؟" → "ذمہ داری۔" "سب سے ہلکی چیز؟" → "غصہ، جو جلدی چلا جاتا ہے۔"</p>
+                            
+                            <p><strong>فریال اور شیان:</strong> "کامیابی کی اصل کنجی؟" → "محنت اور استقامت۔" "ناکامی کی سب سے بڑی وجہ؟" → "تکبر اور غرور۔" "سب سے خوبصورت چیز؟" → "اچھا اخلاق اور مسکراہٹ۔" فریال بہت خوش ہوئی اور انہیں دریا کے پار پہنچا دیا۔</p>
+                            
+                            <p><strong>🌑 باب 4: تیسرا جنگل - تاریکی اور خاموشی کا جنگل (جادوگرنی نمرہ کا راز)</strong><br>
+                            تیسرا جنگل مکمل اندھیرا تھا۔ کوئی آواز نہیں تھی، صرف خاموشی۔ چاروں بادشاہ گھبرا گئے۔ پھر ایک جادوگرنی <strong>نمرہ</strong> نمودار ہوئی۔ اس نے گہرے سوالات پوچھے۔</p>
+                            
+                            <p><strong>نمرہ اور عبدالمنان:</strong> "خاموشی کیا بولتی ہے؟" → "سچائی۔" "اندھیرے میں کیا دکھائی دیتا ہے؟" → "امید کا سورج۔" "سب سے اونچی آواز کیا ہے؟" → "ضمیر کی آواز۔"</p>
+                            
+                            <p><strong>نمرہ اور کیف:</strong> "سب سے قیمتی تحفہ کیا دے سکتے ہو؟" → "معافی۔" "سب سے مشکل کام؟" → "اپنی غلطیوں کو ماننا۔" "سب سے آسان کام؟" → "دوسروں پر تنقید کرنا۔"</p>
+                            
+                            <p><strong>نمرہ اور طلحہ:</strong> "سب سے تیز چیز؟" → "انسانی خیال۔" "سب سے سست چیز؟" → "بدلہ لینے کا انتظار۔" "سب سے خوبصورت زبان؟" → "مسکراہٹ اور پیار بھرے الفاظ۔"</p>
+                            
+                            <p><strong>نمرہ اور شیان:</strong> "موت کیا ہے؟" → "ایک دروازہ، نہ خاتمہ۔" "زندگی کیا ہے؟" → "ایک امتحان۔" "محبت کیا ہے؟" → "قربانی اور وفا کا نام۔" نمرہ نے جادوئی چراغ دے کر روشنی پیدا کی اور راستہ دکھایا۔</p>
+                            
+                            <p><strong>🐾 باب 5: چوتھا جنگل - جانوروں کی عدالت (شیر بہادر کا انصاف)</strong><br>
+                            چوتھے جنگل میں تمام جانور جمع تھے۔ ایک بڑا شیر جس کا نام <strong>بہادر</strong> تھا تخت نشین تھا۔ اس نے کہا: "ہر بادشاہ سے تین سوال، پھر آخری راستہ۔"</p>
+                            
+                            <p><strong>شیر اور عبدالمنان:</strong> "انصاف کی بنیاد کیا ہے؟" → "سچ۔" "جھوٹ کی کیا سزا ہے؟" → "ندامت اور رسوائی۔" "سب سے بڑا جرم؟" → "ظلم اور ناانصافی۔"</p>
+                            
+                            <p><strong>شیر اور کیف:</strong> "معافی کیوں ضروری ہے؟" → "دلوں کو جوڑنے کے لیے۔" "سب سے بڑی طاقت؟" → "تحمل اور برداشت۔" "سب سے کمزور شخص کون؟" → "جو غصے پر قابو نہ رکھ سکے۔"</p>
+                            
+                            <p><strong>شیر اور طلحہ:</strong> "سب سے اچھا انتقام؟" → "بھلائی کرنا۔" "سب سے بری عادت؟" → "حسد اور جلن۔" "سب سے اچھی عادت؟" → "شکر کرنا۔"</p>
+                            
+                            <p><strong>شیر اور شیان:</strong> "حکمرانی کا اصل مقصد؟" → "خدمت خلق۔" "غریب کا کیا حق ہے؟" → "عزت اور احترام۔" "امیر کا کیا فرض ہے؟" → "غریبوں کی مدد کرنا۔" شیر نے سب کو گلے لگایا اور آخری راستہ دکھایا۔</p>
+                            
+                            <p><strong>🏆 باب 6: علم کا خزانہ اور سبق</strong><br>
+                            چاروں بادشاہ چوتھے جنگل سے باہر نکل کر ایک شاندار محل میں پہنچے۔ وہاں انہیں علم کا وہ خزانہ ملا جس میں ہر طرح کی حکمت تھی۔ انہوں نے سیکھا کہ <strong>ہمت، ایمانداری، انصاف، معافی، صبر، اتحاد، محبت اور خدمت</strong> سے ہر مشکل حل ہوتی ہے۔ وہ اپنی سلطنتوں میں واپس آئے اور پوری زندگی انصاف اور محبت سے راج کیا۔</p>
+                            
+                            <p><strong>🏆 نتیجہ:</strong> علم سب سے بڑا خزانہ ہے۔ سچائی اور ہمت سے ہر رکاوٹ کو عبور کیا جا سکتا ہے۔</p>
+                        </div>
+                        
+                        <div class="story-english">
+                            <h3>🇬🇧 ENGLISH STORY - Four Kings Epic Journey</h3>
+                            
+                            <p><strong>🌄 Chapter 1: Introduction of Four Kings</strong><br>
+                            Long ago, there were four great kingdoms ruled by four brothers. The first king was <strong>Abdul Mannan</strong> - just, kind, and loved his people. The second king was <strong>Kaif</strong> - brave, truthful, and kept his word. The third king was <strong>Talha</strong> - wise, knowledgeable, and philosophical. The fourth king was <strong>Shayan</strong> - youngest but most intelligent, sharp, and hardworking.</p>
+                            
+                            <p><strong>🌙 The Dream and Beginning of Journey</strong><br>
+                            One night, all four kings had the same dream. A divine angel told them: "O kings! You must cross four dangerous jungles to obtain the treasure of knowledge. In each jungle, a guide will ask each king three questions. If all answer correctly, the path will open." At dawn, they mounted their loyal horses and began the journey.</p>
+                            
+                            <p><strong>🌳 Chapter 2: First Jungle - The Jungle of Trial & Wisdom (Ayaan's Challenge)</strong><br>
+                            The first jungle was dense and mysterious. Trees so tall that sunlight couldn't reach the ground. Suddenly they met a young man named <strong>Ayaan</strong>. He asked each king three questions. All answered wisely. Ayaan showed them the path.</p>
+                            
+                            <p><strong>🔥 Chapter 3: Second Jungle - Fire & Mountains (Fairy Faryal's Test)</strong><br>
+                            The second jungle was extremely hot with fire and lava. A beautiful fairy <strong>Faryal</strong> appeared. She asked each king three questions about courage, trust, health, and hard work. All answered perfectly. Faryal helped them cross the river.</p>
+                            
+                            <p><strong>🌑 Chapter 4: Third Jungle - Darkness & Silence (Sorceress Namrah's Secret)</strong><br>
+                            Complete darkness and silence. A sorceress <strong>Namrah</strong> appeared. She asked deep questions about silence, hope, forgiveness, thoughts, revenge, smile, death, life, and love. The kings gave excellent answers. Namrah gave them a magic lamp.</p>
+                            
+                            <p><strong>🐾 Chapter 5: Fourth Jungle - Animal Court (Lion Bahadur's Justice)</strong><br>
+                            All animals were gathered. A mighty lion named <strong>Bahadur</strong> sat on the throne. He asked each king three questions about truth, justice, patience, revenge, envy, gratitude, service, and honor. The lion was impressed and showed the final path.</p>
+                            
+                            <p><strong>🏆 Chapter 6: Treasure of Knowledge & Moral</strong><br>
+                            The four kings reached a magnificent palace and found the treasure of knowledge. They learned that courage, honesty, justice, forgiveness, patience, unity, love, and service can overcome any difficulty. They returned to their kingdoms and ruled with justice and love forever.</p>
+                            
+                            <p><strong>🏆 Moral:</strong> Knowledge is the greatest treasure. Truth and courage can overcome any obstacle.</p>
+                        </div>
+                    </div>
+                    <div class="nav-buttons">
+                        <button class="next-btn" data-next="module2">➡️ Next: Grammar (50 Questions)</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 2: GRAMMAR -->
+            <div id="module2" class="module">
+                <div class="card">
+                    <h2>📚 Module 2: Grammar Identification (50 Unique Questions)</h2>
+                    <p class="puzzle-hint">👉 Sahi grammar option select karo - Instant jawab milega 👈</p>
+                    <div id="grammarGame" class="choice-game"></div>
+                    <div id="grammarMessage" class="message"></div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module1">⬅️ Back</button>
+                        <button class="next-btn" data-next="module3">➡️ Next: Fill Blanks</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 3: FILL BLANKS -->
+            <div id="module3" class="module">
+                <div class="card">
+                    <h2>✍️ Module 3: Fill in the Blanks (50 Unique Questions)</h2>
+                    <p class="puzzle-hint">👉 Story ke blanks sahi words se fill karo 👈</p>
+                    <div id="fillBlanksGame" class="choice-game"></div>
+                    <div id="fillBlanksMessage" class="message"></div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module2">⬅️ Back</button>
+                        <button class="next-btn" data-next="module4">➡️ Next: True/False</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 4: TRUE/FALSE -->
+            <div id="module4" class="module">
+                <div class="card">
+                    <h2>✅❌ Module 4: True or False (50 Unique Questions)</h2>
+                    <p class="puzzle-hint">👉 Sentence sahi hai ya galat? Select karo 👈</p>
+                    <div id="trueFalseGame" class="choice-game"></div>
+                    <div id="trueFalseMessage" class="message"></div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module3">⬅️ Back</button>
+                        <button class="next-btn" data-next="module5">➡️ Next: Final Quiz</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 5: FINAL QUIZ -->
+            <div id="module5" class="module">
+                <div class="card">
+                    <h2>🏆 Module 5: Final Quiz (50 Unique Questions)</h2>
+                    <p class="puzzle-hint">👉 Story + Grammar mixed questions. Submit karo aur score dekho 👈</p>
+                    <div id="finalQuizContainer" class="quiz-container"></div>
+                    <button id="submitFinalQuiz" class="submit-btn">✅ Submit Final Quiz</button>
+                    <div id="finalQuizResult" class="quiz-result"></div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn" data-prev="module4">⬅️ Back</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
