@@ -2,136 +2,7 @@
 // LESSON 7: 4 KINGS EPIC JOURNEY
 // 250 COMPLETELY UNIQUE QUESTIONS - NO REPEATS
 // EACH MODULE HAS 50 UNIQUE QUESTIONS
-// WITH URDU AUDIO FOR COMPLETE STORY
 // ============================================
-
-// ========== COMPLETE STORY TEXT FOR AUDIO (URDU) ==========
-const fullStoryUrdu = `بہت پرانے زمانے کی بات ہے۔ چار بڑی سلطنتیں تھیں۔ ان سلطنتوں کے بادشاہ چار بھائی تھے۔ پہلے بادشاہ کا نام عبدالمنان تھا۔ وہ بہت انصاف پسند، مہربان اور رعایا سے محبت کرنے والا تھا۔ دوسرے بادشاہ کا نام کیف تھا۔ وہ بے حد بہادر، سچا اور اپنے قول کا پکا تھا۔ تیسرے بادشاہ کا نام طلحہ تھا۔ وہ بہت حکیم، دانا اور فلسفیانہ ذہن رکھنے والا تھا۔ چوتھے بادشاہ کا نام شیان تھا۔ وہ سب سے چھوٹا لیکن سب سے زیادہ ذہین، تیز فہم اور محنتی تھا۔
-
-ایک رات چاروں بادشاہوں کو ایک جیسا خواب آیا۔ ایک رہنما نے ان سے کہا: اے بادشاہو! تمہیں چار خطرناک جنگلوں سے گزر کر علم کا وہ خزانہ حاصل کرنا ہے جو کسی کو نہیں ملا۔ ہر جنگل میں تمہیں ایک راہنما ملے گا جو تم میں سے ہر بادشاہ سے تین سوال پوچھے گا۔ سب صحیح جواب دو گے تو راستہ کھل جائے گا۔ صبح سویرے چاروں بھائی اپنے وفادار گھوڑوں پر سوار ہوئے اور اللہ کا نام لے کر سفر پر نکل پڑے۔
-
-پہلا جنگل بہت گھنا اور پراسرار تھا۔ درخت اتنے بلند تھے کہ سورج کی کرنیں زمین تک نہیں پہنچ پاتی تھیں۔ راستے بھول بھلیوں کی طرح پیچیدہ تھے۔ اچانک انہیں ایک نوجوان ملا جس کا نام آیاں تھا۔ اس کی آنکھوں میں چمک اور چہرے پر نور تھا۔ آیاں نے کہا: میں تم میں سے ہر ایک سے تین سوال کروں گا۔ سب نے درست جواب دینا ہو گا تبھی راستہ ملے گا۔
-
-آیاں اور بادشاہ عبدالمنان: تم کون ہو؟ میں انصاف پسند بادشاہ عبدالمنان ہوں۔ سب سے بڑی خوبی کیا ہے؟ ایمانداری۔ تم نے یہ خطرناک سفر کیوں کیا؟ اپنی قوم کے لیے علم حاصل کرنے۔
-
-آیاں اور بادشاہ کیف: سب سے طاقتور چیز کیا ہے؟ محبت، کیونکہ یہ دشمن کو بھی دوست بنا دیتی ہے۔ تمہارا اصل دشمن کون ہے؟ ناانصافی اور جھوٹ۔ تمہارا سب سے بڑا ہتھیار کیا ہے؟ انصاف کی تلوار اور سچائی کی ڈھال۔
-
-آیاں اور بادشاہ طلحہ: سب سے قیمتی شے کیا ہے؟ وقت، کیونکہ یہ کبھی واپس نہیں آتا۔ غلطی کا بہترین علاج کیا ہے؟ معافی، کیونکہ یہ دل کو ہلکا کر دیتی ہے۔ ایک اچھے بادشاہ کا پہلا فرض کیا ہے؟ اپنی رعایا کی حفاظت اور خوشحالی۔
-
-آیاں اور بادشاہ شیان: تم چاروں بھائی کیوں اکٹھے سفر کر رہے ہو؟ اتحاد میں برکت ہے، اکیلے کا کوئی نہیں۔ سب سے بڑا راز کیا ہے؟ صبر، ہر مشکل حل ہو جاتی ہے صبر سے۔ تم اس سفر سے کیا سیکھنا چاہتے ہو؟ حکمت اور عاجزی۔ آیاں نے تمام جواب سن کر کہا: تم سچے اور بہادر ہو۔ اس نے راستہ دکھا دیا۔
-
-دوسرا جنگل انتہائی گرم تھا۔ زمین سے آگ کے شعلے اٹھ رہے تھے اور پہاڑوں سے پگھلا ہوا لاوا بہہ رہا تھا۔ اچانک ایک حسین پری جس کا نام فریال تھا نمودار ہوئی۔ اس نے کہا: ہر بادشاہ سے تین سوال، پھر راستہ۔
-
-فریال اور عبدالمنان: آگ کیا چیز بجھا سکتی ہے؟ ہمت۔ پہاڑ کیا توڑ سکتا ہے؟ مضبوط ارادے۔ سب سے ٹھنڈی چیز کیا ہے؟ مومن کا پرسکون دل۔
-
-فریال اور کیف: دریائے آگ کو کیسے پار کرو گے؟ اللہ پر بھروسہ کر کے۔ روشنی کیا ہے؟ سچائی۔ اندھیرے میں راستہ کیسے ملے گا؟ دعا اور استغفار سے۔
-
-فریال اور طلحہ: سب سے بڑی دولت کیا ہے؟ صحت اور عافیت۔ سب سے بھاری چیز؟ ذمہ داری۔ سب سے ہلکی چیز؟ غصہ، جو جلدی چلا جاتا ہے۔
-
-فریال اور شیان: کامیابی کی اصل کنجی؟ محنت اور استقامت۔ ناکامی کی سب سے بڑی وجہ؟ تکبر اور غرور۔ سب سے خوبصورت چیز؟ اچھا اخلاق اور مسکراہٹ۔ فریال بہت خوش ہوئی اور انہیں دریا کے پار پہنچا دیا۔
-
-تیسرا جنگل مکمل اندھیرا تھا۔ کوئی آواز نہیں تھی، صرف خاموشی۔ چاروں بادشاہ گھبرا گئے۔ پھر ایک جادوگرنی نمرہ نمودار ہوئی۔ اس نے گہرے سوالات پوچھے۔
-
-نمرہ اور عبدالمنان: خاموشی کیا بولتی ہے؟ سچائی۔ اندھیرے میں کیا دکھائی دیتا ہے؟ امید کا سورج۔ سب سے اونچی آواز کیا ہے؟ ضمیر کی آواز۔
-
-نمرہ اور کیف: سب سے قیمتی تحفہ کیا دے سکتے ہو؟ معافی۔ سب سے مشکل کام؟ اپنی غلطیوں کو ماننا۔ سب سے آسان کام؟ دوسروں پر تنقید کرنا۔
-
-نمرہ اور طلحہ: سب سے تیز چیز؟ انسانی خیال۔ سب سے سست چیز؟ بدلہ لینے کا انتظار۔ سب سے خوبصورت زبان؟ مسکراہٹ اور پیار بھرے الفاظ۔
-
-نمرہ اور شیان: موت کیا ہے؟ ایک دروازہ، نہ خاتمہ۔ زندگی کیا ہے؟ ایک امتحان۔ محبت کیا ہے؟ قربانی اور وفا کا نام۔ نمرہ نے جادوئی چراغ دے کر روشنی پیدا کی اور راستہ دکھایا۔
-
-چوتھے جنگل میں تمام جانور جمع تھے۔ ایک بڑا شیر جس کا نام بہادر تھا تخت نشین تھا۔ اس نے کہا: ہر بادشاہ سے تین سوال، پھر آخری راستہ۔
-
-شیر اور عبدالمنان: انصاف کی بنیاد کیا ہے؟ سچ۔ جھوٹ کی کیا سزا ہے؟ ندامت اور رسوائی۔ سب سے بڑا جرم؟ ظلم اور ناانصافی۔
-
-شیر اور کیف: معافی کیوں ضروری ہے؟ دلوں کو جوڑنے کے لیے۔ سب سے بڑی طاقت؟ تحمل اور برداشت۔ سب سے کمزور شخص کون؟ جو غصے پر قابو نہ رکھ سکے۔
-
-شیر اور طلحہ: سب سے اچھا انتقام؟ بھلائی کرنا۔ سب سے بری عادت؟ حسد اور جلن۔ سب سے اچھی عادت؟ شکر کرنا۔
-
-شیر اور شیان: حکمرانی کا اصل مقصد؟ خدمت خلق۔ غریب کا کیا حق ہے؟ عزت اور احترام۔ امیر کا کیا فرض ہے؟ غریبوں کی مدد کرنا۔ شیر نے سب کو گلے لگایا اور آخری راستہ دکھایا۔
-
-چاروں بادشاہ چوتھے جنگل سے باہر نکل کر ایک شاندار محل میں پہنچے۔ وہاں انہیں علم کا وہ خزانہ ملا جس میں ہر طرح کی حکمت تھی۔ انہوں نے سیکھا کہ ہمت، ایمانداری، انصاف، معافی، صبر، اتحاد، محبت اور خدمت سے ہر مشکل حل ہوتی ہے۔ وہ اپنی سلطنتوں میں واپس آئے اور پوری زندگی انصاف اور محبت سے راج کیا۔
-
-علم سب سے بڑا خزانہ ہے۔ سچائی اور ہمت سے ہر رکاوٹ کو عبور کیا جا سکتا ہے۔`;
-
-// ========== AUDIO FUNCTIONALITY ==========
-let speechSynthesis = window.speechSynthesis;
-let currentUtterance = null;
-let isPlaying = false;
-
-function playFullStory() {
-    // Stop any currently playing audio
-    if (currentUtterance) {
-        speechSynthesis.cancel();
-        currentUtterance = null;
-    }
-    
-    const statusDiv = document.getElementById('audioStatus');
-    if (!statusDiv) return;
-    
-    // Create new utterance
-    currentUtterance = new SpeechSynthesisUtterance(fullStoryUrdu);
-    currentUtterance.lang = 'ur-PK';
-    currentUtterance.rate = 0.85;
-    currentUtterance.pitch = 1;
-    currentUtterance.volume = 1;
-    
-    // Get available voices and try to find Urdu voice
-    const setVoiceAndPlay = () => {
-        const voices = speechSynthesis.getVoices();
-        const urduVoice = voices.find(voice => voice.lang === 'ur-PK' || voice.lang === 'ur-IN' || voice.lang === 'ur');
-        if (urduVoice) {
-            currentUtterance.voice = urduVoice;
-        }
-        speechSynthesis.speak(currentUtterance);
-        isPlaying = true;
-        statusDiv.innerHTML = '🔊 کہانی سنائی جا رہی ہے... Story is playing...';
-        statusDiv.style.background = '#d4edda';
-        statusDiv.style.color = '#155724';
-    };
-    
-    // Handle voices loaded
-    if (speechSynthesis.getVoices().length > 0) {
-        setVoiceAndPlay();
-    } else {
-        speechSynthesis.onvoiceschanged = setVoiceAndPlay;
-    }
-    
-    // Handle end of speech
-    currentUtterance.onend = () => {
-        isPlaying = false;
-        currentUtterance = null;
-        if (statusDiv) {
-            statusDiv.innerHTML = '✅ کہانی ختم ہو گئی۔ Story finished! دوبارہ سننے کے لیے Play بٹن دبائیں۔';
-            statusDiv.style.background = '#d4edda';
-        }
-    };
-    
-    // Handle error
-    currentUtterance.onerror = () => {
-        isPlaying = false;
-        currentUtterance = null;
-        if (statusDiv) {
-            statusDiv.innerHTML = '❌ آڈیو پلے نہیں ہو سکی۔ براہ کرم دوبارہ کوشش کریں۔ Audio error!';
-            statusDiv.style.background = '#f8d7da';
-            statusDiv.style.color = '#721c24';
-        }
-    };
-}
-
-function stopStory() {
-    if (speechSynthesis) {
-        speechSynthesis.cancel();
-        isPlaying = false;
-        currentUtterance = null;
-        const statusDiv = document.getElementById('audioStatus');
-        if (statusDiv) {
-            statusDiv.innerHTML = '⏹️ کہانی روک دی گئی۔ Story stopped. دوبارہ سننے کے لیے Play بٹن دبائیں۔';
-            statusDiv.style.background = '#fff3cd';
-            statusDiv.style.color = '#856404';
-        }
-    }
-}
 
 // ========== MODULE 2: 50 UNIQUE GRAMMAR QUESTIONS ==========
 const grammarQuestions = [
@@ -187,7 +58,7 @@ const grammarQuestions = [
     { text: "50. 'سبق کا نتیجہ کامیابی ہے' - 'کامیابی' noun?", options: ["Yes", "No"], answer: "Yes", explanation: "Ek cheez ka naam" }
 ];
 
-// ========== MODULE 3: 50 UNIQUE FILL IN THE BLANKS ==========
+// ========== MODULE 3: 50 UNIQUE FILL IN THE BLANKS (COMPLETELY DIFFERENT QUESTIONS - NO REPEAT) ==========
 const fillBlanksQuestions = [
     { text: "1. چاروں بادشاہ آپس میں _____ تھے۔", options: ["بھائی", "دشمن", "پڑوسی", "تاجر"], answer: "بھائی", explanation: "وہ چاروں بھائی تھے" },
     { text: "2. بادشاہوں کو _____ میں رہنما نے راستہ بتایا۔", options: ["خواب", "دن", "شام", "صبح"], answer: "خواب", explanation: "فرشتے نے خواب میں بتایا" },
@@ -241,7 +112,7 @@ const fillBlanksQuestions = [
     { text: "50. شیان نے کہا غریب کا حق _____ ہے۔", options: ["عزت", "دولت", "طاقت", "شہرت"], answer: "عزت", explanation: "غریب کی عزت کرنا سب کا فرض ہے" }
 ];
 
-// ========== MODULE 4: 50 UNIQUE TRUE/FALSE QUESTIONS ==========
+// ========== MODULE 4: 50 UNIQUE TRUE/FALSE QUESTIONS (NO REPEATS) ==========
 const trueFalseQuestions = [
     { text: "1. بادشاہ عبدالمنان انصاف پسند تھا۔", isTrue: true, explanation: "ہاں، وہ بہت انصاف پسند تھا۔" },
     { text: "2. بادشاہ کیف ڈرپوک تھا۔", isTrue: false, explanation: "نہیں، کیف بہت بہادر تھا۔" },
@@ -295,7 +166,7 @@ const trueFalseQuestions = [
     { text: "50. کہانی کا مرکزی پیغام 'محنت اور استقامت' ہے۔", isTrue: true, explanation: "ہاں، یہ کامیابی کی کنجی ہے۔" }
 ];
 
-// ========== MODULE 5: 50 UNIQUE FINAL QUIZ QUESTIONS ==========
+// ========== MODULE 5: 50 UNIQUE FINAL QUIZ QUESTIONS (NO REPEATS) ==========
 const finalQuizData = [
     { q: "1. پہلے جنگل میں راہنما کا نام کیا تھا؟", opt: ["آیان", "فریال", "نمرہ", "بہادر"], correct: "آیان" },
     { q: "2. بادشاہ عبدالمنان کس خوبی کو سب سے بڑا سمجھتا تھا؟", opt: ["ایمانداری", "طاقت", "دولت", "حکمت"], correct: "ایمانداری" },
@@ -361,19 +232,15 @@ document.addEventListener('DOMContentLoaded', () => {
     setupFillBlanksGame();
     setupTrueFalseGame();
     setupFinalQuiz();
-    setupAudioButtons();
-    goHomeFunction();
 });
 
 function updateProgress() {
     const percent = (currentModule / totalModules) * 100;
-    const progressBar = document.getElementById('progressBar');
-    if (progressBar) progressBar.style.width = percent + '%';
+    document.getElementById('progressBar').style.width = percent + '%';
 }
 
 function createDots() {
     const container = document.getElementById('moduleDots');
-    if (!container) return;
     container.innerHTML = '';
     for (let i = 1; i <= totalModules; i++) {
         const dot = document.createElement('div');
@@ -386,14 +253,11 @@ function createDots() {
 
 function showModule(moduleId) {
     document.querySelectorAll('.module').forEach(m => m.classList.remove('active'));
-    const target = document.getElementById(moduleId);
-    if (target) {
-        target.classList.add('active');
-        currentModule = parseInt(moduleId.replace('module', ''));
-        updateProgress();
-        updateActiveDot();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
+    document.getElementById(moduleId).classList.add('active');
+    currentModule = parseInt(moduleId.replace('module', ''));
+    updateProgress();
+    updateActiveDot();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function updateActiveDot() {
@@ -419,26 +283,6 @@ function goHome() {
     window.location.href = '../index.html';
 }
 
-function goHomeFunction() {
-    const homeBtn = document.querySelector('.home-btn');
-    if (homeBtn) {
-        homeBtn.addEventListener('click', goHome);
-    }
-}
-
-// ========== AUDIO BUTTONS SETUP ==========
-function setupAudioButtons() {
-    const playBtn = document.getElementById('playAudioBtn');
-    const stopBtn = document.getElementById('stopAudioBtn');
-    
-    if (playBtn) {
-        playBtn.addEventListener('click', playFullStory);
-    }
-    if (stopBtn) {
-        stopBtn.addEventListener('click', stopStory);
-    }
-}
-
 // ========== MODULE 2: GRAMMAR GAME ==========
 let grammarIndex = 0;
 let grammarList = [...grammarQuestions].sort(() => Math.random() - 0.5);
@@ -451,8 +295,6 @@ function setupGrammarGame() {
 function loadGrammarQuestion() {
     const container = document.getElementById('grammarGame');
     const msgDiv = document.getElementById('grammarMessage');
-    
-    if (!container) return;
     
     if (grammarIndex >= grammarList.length) {
         container.innerHTML = '<h3 style="color:#2ecc71; text-align:center;">🎉 Mubarak! Aapne 50 grammar questions complete kar liye! 🎉</h3>';
@@ -473,27 +315,23 @@ function loadGrammarQuestion() {
         btn.addEventListener('click', () => {
             if (btn.getAttribute('data-opt') === item.answer) {
                 grammarIndex++;
-                if (msgDiv) {
-                    msgDiv.innerHTML = `✅ SAHI JAWAB! (${grammarIndex}/50)<br>📖 ${item.explanation}`;
-                    msgDiv.style.background = '#d4edda';
-                    msgDiv.style.color = '#155724';
-                }
+                msgDiv.innerHTML = `✅ SAHI JAWAB! (${grammarIndex}/50)<br>📖 ${item.explanation}`;
+                msgDiv.style.background = '#d4edda';
+                msgDiv.style.color = '#155724';
                 loadGrammarQuestion();
             } else {
-                if (msgDiv) {
-                    msgDiv.innerHTML = `❌ GHALAT JAWAB! Sahi jawab "${item.answer}" hai.<br>📖 ${item.explanation}`;
-                    msgDiv.style.background = '#f8d7da';
-                    msgDiv.style.color = '#721c24';
-                }
+                msgDiv.innerHTML = `❌ GHALAT JAWAB! Sahi jawab "${item.answer}" hai.<br>📖 ${item.explanation}`;
+                msgDiv.style.background = '#f8d7da';
+                msgDiv.style.color = '#721c24';
             }
             setTimeout(() => {
-                if (grammarIndex < grammarList.length && msgDiv) msgDiv.innerHTML = '';
+                if (grammarIndex < grammarList.length) msgDiv.innerHTML = '';
             }, 1500);
         });
     });
 }
 
-// ========== MODULE 3: FILL BLANKS GAME ==========
+// ========== MODULE 3: FILL BLANKS GAME LOGIC ==========
 let fillIndex = 0;
 let fillList = [...fillBlanksQuestions].sort(() => Math.random() - 0.5);
 
@@ -505,8 +343,6 @@ function setupFillBlanksGame() {
 function loadFillQuestion() {
     const container = document.getElementById('fillBlanksGame');
     const msgDiv = document.getElementById('fillBlanksMessage');
-    
-    if (!container) return;
     
     if (fillIndex >= fillList.length) {
         container.innerHTML = '<h3 style="color:#2ecc71; text-align:center;">🎉 Mubarak! Aapne 50 fill blanks complete kar liye! 🎉</h3>';
@@ -527,27 +363,31 @@ function loadFillQuestion() {
         btn.addEventListener('click', () => {
             if (btn.getAttribute('data-opt') === item.answer) {
                 fillIndex++;
-                if (msgDiv) {
-                    msgDiv.innerHTML = `✅ SAHI JAWAB! (${fillIndex}/50)<br>📖 ${item.explanation}`;
-                    msgDiv.style.background = '#d4edda';
-                    msgDiv.style.color = '#155724';
-                }
+                msgDiv.innerHTML = `✅ SAHI JAWAB! (${fillIndex}/50)<br>📖 ${item.explanation}`;
+                msgDiv.style.background = '#d4edda';
+                msgDiv.style.color = '#155724';
                 loadFillQuestion();
             } else {
-                if (msgDiv) {
-                    msgDiv.innerHTML = `❌ GHALAT JAWAB! Sahi jawab "${item.answer}" hai.<br>📖 ${item.explanation}`;
-                    msgDiv.style.background = '#f8d7da';
-                    msgDiv.style.color = '#721c24';
-                }
+                msgDiv.innerHTML = `❌ GHALAT JAWAB! Sahi jawab "${item.answer}" hai.<br>📖 ${item.explanation}`;
+                msgDiv.style.background = '#f8d7da';
+                msgDiv.style.color = '#721c24';
             }
             setTimeout(() => {
-                if (fillIndex < fillList.length && msgDiv) msgDiv.innerHTML = '';
+                if (fillIndex < fillList.length) msgDiv.innerHTML = '';
             }, 1500);
         });
     });
 }
 
-// ========== MODULE 4: TRUE/FALSE GAME ==========
+// Start the game when page loads
+document.addEventListener('DOMContentLoaded', function() {
+    if (typeof setupFillBlanksGame === 'function') {
+        setupFillBlanksGame();
+    }
+});
+
+
+// ========== MODULE 4: TRUE/FALSE GAME LOGIC ==========
 let tfIndex = 0;
 let tfList = [...trueFalseQuestions].sort(() => Math.random() - 0.5);
 
@@ -559,8 +399,6 @@ function setupTrueFalseGame() {
 function loadTrueFalse() {
     const container = document.getElementById('trueFalseGame');
     const msgDiv = document.getElementById('trueFalseMessage');
-    
-    if (!container) return;
     
     if (tfIndex >= tfList.length) {
         container.innerHTML = '<h3 style="color:#2ecc71; text-align:center;">🎉 Mubarak! Aapne 50 true/false questions complete kar liye! 🎉</h3>';
@@ -583,32 +421,32 @@ function loadTrueFalse() {
             const selected = btn.getAttribute('data-opt') === 'true';
             if (selected === item.isTrue) {
                 tfIndex++;
-                if (msgDiv) {
-                    msgDiv.innerHTML = `✅ SAHI JAWAB! (${tfIndex}/50)<br>📖 ${item.explanation}`;
-                    msgDiv.style.background = '#d4edda';
-                    msgDiv.style.color = '#155724';
-                }
+                msgDiv.innerHTML = `✅ SAHI JAWAB! (${tfIndex}/50)<br>📖 ${item.explanation}`;
+                msgDiv.style.background = '#d4edda';
+                msgDiv.style.color = '#155724';
                 loadTrueFalse();
             } else {
-                if (msgDiv) {
-                    msgDiv.innerHTML = `❌ GHALAT JAWAB! Sahi jawab "${item.isTrue ? 'True (سچ)' : 'False (جھوٹ)'}" hai.<br>📖 ${item.explanation}`;
-                    msgDiv.style.background = '#f8d7da';
-                    msgDiv.style.color = '#721c24';
-                }
+                msgDiv.innerHTML = `❌ GHALAT JAWAB! Sahi jawab "${item.isTrue ? 'True (سچ)' : 'False (جھوٹ)'}" hai.<br>📖 ${item.explanation}`;
+                msgDiv.style.background = '#f8d7da';
+                msgDiv.style.color = '#721c24';
             }
             setTimeout(() => {
-                if (tfIndex < tfList.length && msgDiv) msgDiv.innerHTML = '';
+                if (tfIndex < tfList.length) msgDiv.innerHTML = '';
             }, 1500);
         });
     });
 }
 
-// ========== MODULE 5: FINAL QUIZ ==========
+// Start the game when page loads
+document.addEventListener('DOMContentLoaded', function() {
+    setupTrueFalseGame();
+});
+
+// ========== MODULE 5: FINAL QUIZ GAME LOGIC ==========
 function setupFinalQuiz() {
     const container = document.getElementById('finalQuizContainer');
-    if (!container) return;
-    
     const shuffled = [...finalQuizData].sort(() => Math.random() - 0.5);
+    
     let html = '';
     shuffled.forEach((q, idx) => {
         const shuffledOpt = [...q.opt].sort(() => Math.random() - 0.5);
@@ -628,31 +466,31 @@ function setupFinalQuiz() {
     });
     container.innerHTML = html;
     
-    const submitBtn = document.getElementById('submitFinalQuiz');
-    if (submitBtn) {
-        submitBtn.addEventListener('click', () => {
-            let score = 0;
-            shuffled.forEach((q, idx) => {
-                const selected = document.querySelector(`input[name="finalq${idx}"]:checked`);
-                if (selected && selected.value === q.correct) score++;
-            });
-            
-            const resultDiv = document.getElementById('finalQuizResult');
-            if (resultDiv) {
-                resultDiv.innerHTML = `🎉 Aapne ${score} / ${shuffled.length} sahi jawab diye! 🎉`;
-                resultDiv.style.background = '#d4edda';
-                resultDiv.style.color = '#155724';
-                
-                if (score === shuffled.length) {
-                    resultDiv.innerHTML += `<br><br>🏆 PERFECT SCORE! Aap champion hain! 🏆`;
-                } else if (score >= 40) {
-                    resultDiv.innerHTML += `<br><br>⭐ BAHUT ACHA! Mazeed practice karo! ⭐`;
-                } else if (score >= 25) {
-                    resultDiv.innerHTML += `<br><br>👍 ACHA HAI! Aur try karo! 👍`;
-                } else {
-                    resultDiv.innerHTML += `<br><br>📖 Story dubara parho aur try karo! 📖`;
-                }
-            }
+    document.getElementById('submitFinalQuiz').addEventListener('click', () => {
+        let score = 0;
+        shuffled.forEach((q, idx) => {
+            const selected = document.querySelector(`input[name="finalq${idx}"]:checked`);
+            if (selected && selected.value === q.correct) score++;
         });
-    }
+        
+        const resultDiv = document.getElementById('finalQuizResult');
+        resultDiv.innerHTML = `🎉 Aapne ${score} / ${shuffled.length} sahi jawab diye! 🎉`;
+        resultDiv.style.background = '#d4edda';
+        resultDiv.style.color = '#155724';
+        
+        if (score === shuffled.length) {
+            resultDiv.innerHTML += `<br><br>🏆 PERFECT SCORE! Aap champion hain! 🏆`;
+        } else if (score >= 40) {
+            resultDiv.innerHTML += `<br><br>⭐ BAHUT ACHA! Mazeed practice karo! ⭐`;
+        } else if (score >= 25) {
+            resultDiv.innerHTML += `<br><br>👍 ACHA HAI! Aur try karo! 👍`;
+        } else {
+            resultDiv.innerHTML += `<br><br>📖 Story dubara parho aur try karo! 📖`;
+        }
+    });
 }
+
+// Start the quiz when page loads
+document.addEventListener('DOMContentLoaded', function() {
+    setupFinalQuiz();
+});
